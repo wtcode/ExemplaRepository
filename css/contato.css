@@ -1,0 +1,93 @@
+.divFormContato{
+	width:487px;
+	height:605px;
+	float:left;
+	margin-left:12px;
+}
+
+.divMapaContato{
+	width:470px;
+	height:453px;
+	float:left;
+	margin-left:18px;
+	}
+	
+.divTitulo{
+	float:left;
+	font-family:Myriad Pro;
+	font-size:25px;
+	width:100%;
+	color:#37939F;
+	background-image:url(../imagens/linhacontato.png);
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	padding-bottom:3px;
+	}
+	
+.divObsContato{
+	width:100%;
+	float:left;
+	height:45px;
+	font-family:Myriad Pro;
+	font-size:15px;
+	color:#666666;
+	margin-top:14px;
+	}
+	
+.divSeguraCampos{
+	width:100%;
+	height:500px;
+	float:left;
+	margin-top:20px;
+	}
+.input{
+	font-family:Myriad Pro;
+	font-size:20px; 
+	color:#888888;
+	padding:12px;
+	width:95%;
+	height:17px;
+	border-radius:7px;
+	border:2px solid #D9D9D9;
+	background-image:url(../imagens/fundoTextArea.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	}
+	
+.divSeguraCampos textarea{
+	font-family:Myriad Pro;
+	font-size:20px; 
+	color:#888888;
+	padding:12px;
+	width:95%;
+	border-radius:7px;
+	border:2px solid #D9D9D9;
+	background-image:url(../imagens/fundoTextArea.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	}
+	
+.select{
+	font-family:Myriad Pro;
+	font-size:20px; 
+	color:#888888;
+	padding:12px;
+	width:95%;
+	border-radius:7px;
+	border:2px solid #D9D9D9;
+	background-image:url(../imagens/fundoTextArea.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	}
+
+.botaoEnvia{
+	width:200px;
+	border:2px solid #FFF;
+	font-family:Myriad Pro;
+	font-size:20px;
+	color:#FFF;
+	background-color:#37949F;
+	padding:5px;
+	cursor:pointer;
+	border-radius:7px;
+	}

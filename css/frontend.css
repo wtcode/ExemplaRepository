@@ -1,0 +1,463 @@
+@charset "utf-8";
+/* CSS Document */
+
+* html .tudo {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	}
+body{
+	margin: 0 auto;
+	font-family:Myriad Pro;
+	}
+
+.divmain{
+	width:1000px;
+	margin:0 auto;
+	}
+
+.tudo{
+	width:100%;
+	min-height:100px;
+	position:relative;
+	background-image:url(../imagens/fundotudo.png);
+	}
+a{
+	font-family:Myriad Pro;
+	font-size:20px;
+	color:#37949F;
+	text-decoration:none;
+	/*font-weight:bold;*/
+
+	}
+
+.conteudo{
+	width:1000px;	
+	margin:30px auto;
+	}
+	
+.banners{
+	width:1000px;	
+	margin:0px auto;
+	height:325px;
+	}
+	
+.barraTopo{
+	background-image:url(../imagens/barra_topo.png);
+	height:132px;
+	width:100%;
+	}
+.barraMenuTopo_azul{
+	/*background-color:#FCFCFC;*/
+	background-image:url(../imagens/barra_topo_menu.png);
+	background-repeat:repeat-x;
+	height:41px;
+	width:100%;
+	}
+	
+.cabecalho{
+	width:1000px;	
+	margin:0 auto;
+	height:101px;
+	}
+		
+.logo{
+	width:276px;
+	height:90px;
+	position:absolute;
+	float:left;
+	background-repeat:no-repeat;
+	margin-top:32px;
+	}
+
+.barraMenus{
+	height:35px;
+	float:left;
+	}
+
+.barraMenus table{
+	height:35px;
+	float:left;
+	
+	width:1000px;
+	}
+.barraMenus td{
+	border-right:1px solid #D6D6D6;
+	text-align:center;
+	}
+
+.textoMenu a{
+	font-family:Myriad Pro;
+	font-size:20px;
+	color:#37949F;
+	text-decoration:none;
+	font-weight:normal;
+
+	}
+	
+.textoMenu a:hover{
+	height:20px;
+	font-family:Myriad Pro;
+	font-size:20px;
+	color:#006A34;
+	text-decoration:none;
+	
+	}
+
+.contato{
+	height:25px;
+	float:right;
+	width:100%;
+	text-align:right;
+	margin-top:32px;
+	}
+	
+.barraBreadCumps{
+	width:1000px;	
+	margin:15px auto;
+	height:20px;
+	}
+	
+.produto{
+	width:280px;
+	/*height:280px;*/
+	float:left;
+	/*margin-right:88px;*/
+	margin-bottom:37px;
+	
+	
+	}
+.tituloProduto{
+	width:100%;
+	/*height:30px;*/
+	float:left;
+	font-family:Myriad Pro;
+	font-size:16px;
+	color:#444444;
+	text-align:left;
+	background-image:url(../imagens/separador_titulo_produto.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	}
+.seprador{
+	width:100%;
+	height:8px;
+	background-image:url(imagens/separador_produto.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	float:left;
+	}
+.nomeBairro{
+	width:100%;
+	height:22px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#777777;
+	text-align:center;
+	margin-top:0px;
+	}
+
+.divFotoProduto{
+	width:280px;
+	height:180px;
+	float:left;
+	margin-left:0px;
+	margin-top:4px;
+	background-image:url(../imagens/fundoFotoProduto.png);
+	background-position:center;
+	background-size: 300px 186px;
+	background-repeat:no-repeat;
+
+	}
+.divFotoProduto img{
+	/*margin-left:5px;
+	margin-top:13px;*/
+	position:absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	}
+	
+.nomeProduto{
+	width:100%;
+	height:68px;
+	float:left;
+	font-family:Myriad Pro, Helvetica, sans-serif;
+	font-size:14px;
+	color:#444444;
+	text-align:left;
+	margin-top:3px;
+	padding-left:4px;
+	}
+	
+.precoProduto{
+	width:100%;
+	height:22px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#8C0000;
+	text-align:left;
+	margin-top:2px;
+	padding-left:15px;
+	}
+	
+.botaoDetalhes{
+	width:100%;
+	float:left;
+	margin-top:7px;
+	margin-left:23px;
+	}
+
+.rodape{
+	width:100%;
+	background-color:#37949F;
+	height:98px;
+	position:relative;	
+	}
+.conteudoRodape{
+	margin:0 auto;
+	height:98px;
+	width:1000px;
+	}
+.logoRodape{
+	
+	height:73px;
+	width:233px;
+	margin-top:13px;
+	position:absolute;
+	float:left;
+	}
+.clear {clear:both;}
+
+.separadorRodape{
+	height:73px;
+	width:0px;
+	margin-top:13px;
+	float:left;
+	margin-left:240px;
+	border-left:1px solid #D6D6D6;
+	}
+	
+.enderecoRodape{
+	height:75px;
+	width:373px;
+	margin-top:21px;
+	float:left;
+	margin-left:22px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:15px;
+	}
+/*------------------------------------------------------------------
+-            			PÁGINA DETALHES                            -
+--------------------------------------------------------------------*/           
+
+.blocoFotosDestaque{
+	width:727px;
+	float:left;
+	background-color:#EEEEEE;
+	margin-top:10px;
+	}
+	
+.blocoNomeCasaDetalhes{
+	width:716px;
+	float:left;
+	margin:0px auto;
+	}
+	
+.blocoContatoDetalhes{
+	width:254px;
+	float:right;
+	height:77px;
+	
+	}
+
+.blocoContatoDetalhes img{
+/*	width:30px;
+*/	}
+/*.blocoContatoDetalhes table{
+	margin-left:10px;
+	margin-top:4px;
+	}*/
+	
+
+	
+.blocoDescricaoImovel{
+	width:708px;
+	float:left;
+	margin-top:0px;
+	padding:5px;
+	
+	}
+	
+.blocoDescricaoImovelFiltset{
+	width:708px;
+	float:left;
+	margin-top:22px;
+	padding:5px;
+	
+	}
+
+.tdTabelaDetalhes{
+	width:150px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	font-size:14px;
+	}
+.arial_10_cinza{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333;
+	}
+	
+.arial_10_preto{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:black;
+	}
+	
+.arial_11_cinza{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333;
+	}
+
+.arial_12_cinza{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	}
+
+.arial_14_cinza{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#333;
+	}
+
+.arial_19_cinza{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:19px;
+	color:#333;
+	}
+	
+.arial_19_vermelha{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:19px;
+	color:#8C0000;
+	}
+	
+.arial_10_preto{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:black;
+	}
+.titulosDestaques_vermelho{
+	font-family: 'Tinos', serif;
+	color:#8C0000;	
+	}
+
+.titulosDestaques_azul{
+	font-family: 'Tinos', serif;
+	color:#0F72B8;	
+	}
+	
+.borda_cinza_a5{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #D6D6D6;
+	}
+
+.borda_cinza_a10{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #D6D6D6;
+	}
+
+.borda_cinza_a15{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #D6D6D6;
+	}
+.tituloRodape{
+	font-family:Myriad Pro;
+	color:#444444;
+	}
+	
+.linkRodape{
+	font-family:Myriad Pro;
+	color:#444444;
+	font-size:15px;
+	text-decoration:none;
+	font-weight:normal;
+	}
+	
+.linkRodape:hover{
+	font-family:Myriad Pro;
+	color:#444444;
+	font-size:15px;
+	text-decoration:underline;
+	font-weight:normal;
+	}
+	
+.inputNewsletter{
+	border:1px solid #D6D6D6;
+	padding:5px;
+	width:174px;
+	font-family:Myriad Pro;
+	color:#A1A1A1;
+	font-size:13px;
+	border-radius:4px;
+	}
+
+.bttNewsletter{
+	border:1px solid #D6D6D6;
+	padding:5px;
+	width:38px;
+	color:#FFF;
+	font-family:Myriad Pro;
+	font-size:15px;
+	background-color:#36939E;
+	border-radius:4px;
+}
+
+
+/*------------------------------------------------------------------
+-             STYLE DA GALERIA DA PÁGINA DETALHES                  -
+--------------------------------------------------------------------*/  
+/*Criamos alguns estilos apenas pra posicionar melhor os elementos*/
+.clear{clear:both;}
+.imagem{margin:0px; border:0px solid #000;
+}
+
+.imagem img{
+margin: auto;
+vertical-align: middle;  	
+/*border:2px solid #D6D6D6;*/
+	}
+/*Modificado para parte 2*/
+.thumbs img{float:left;margin:6px;cursor:pointer;border:0px solid #000; border: 2px solid #D6D6D6;}
+/*Adicionados para parte 2*/
+input.botao{width:78px; height:100px; position:absolute;font-weight:bold;float:left; margin-top:222px;cursor:pointer;}
+div.botao{width:78px; height:100px; position:absolute;font-weight:bold;float:left; margin-top:222px;cursor:pointer;}
+.proximo{margin-left:648px; background:transparent url(../imagens/right-arrow.png);}
+.anterior{margin-left:0px; background:transparent url(../imagens/left-arrow.png);}
+.segurafotopequena{ width:420px;float:left; margin-left:43px; height:45px;}
+/*FIM STYLE PAGINA DETALHES*/
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+.tituloPagina{
+	margin-top: 51px; font-size:25px; font-family:Myriad Pro; color:#37929F; padding-left:5px; width: 990px;
+	background-image:url(../imagens/separatitulopublicacoes.jpg); background-position:bottom left;	background-repeat:no-repeat;
+}
+
+.blocoPublicacao{
+	width:710px;
+	height:245px;
+	/*background-color:#CCC;*/
+	margin-top:40px;
+	margin-left:25px;
+	float:right;
+}
+
+.blocoPublicacaoDetalhe{
+	width:710px;
+	/*height:245px;
+	background-color:#CCC;*/
+	margin-top:40px;
+	margin-left:25px;
+	float:right;
+	}
+	
+.barraTitulo{
+	width:100%;
+	background-color:#37939F;
+	/*height:35px;*/
+	color:#FFF;
+	float:left;
+	font-size:20px;
+	}
+	
+.barraData{
+	width:182px;
+	background-color:#85BAC6;
+	height:35px;
+	color:#FFF;
+	float:left;
+	font-size:20px;
+	}
+	
+.barraLeiaMais{
+	width:182px;
+	background-color:#37939F;
+	height:35px;
+	color:#FFF;
+	float:left;
+	font-size:20px;
+	}
+	
+.menuLateral{
+	float:left;
+	width:195px;
+	margin-top:10px;
+	}
+	
+.tituloMenu{
+	font-family:Myriad Pro;
+	font-size:16px;
+	color:#444444;
+	border-bottom:1px solid #A3A3A3;
+	padding-bottom:4px;
+	}
+	
+.subCategoriaMenu{
+	font-family:Myriad Pro;
+	font-size:16px;
+	color:#A4A4A4;
+	padding-bottom:10px;
+	}
+	
+.fotoPublicacao{
+	width:281px;
+	height:196px;
+	background-color:#FFDC73;
+	float:left;
+	margin-top:6px;
+	}
+	.fotoPublicacao img{
+		margin-top:2px;
+		margin-left:2px;
+		width:277px;
+		height:192px;
+		}
+
+.tdData{
+	-moz-border-radius-topright: 7px;
+	-webkit-border-top-right-radius: 7px;
+	border-top-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	}
+	
+.blocoTexto{
+	width:403px;
+	height:169px;
+	float:left;
+	font-size:14px;
+	font-family:Myriad Pro;
+	margin-left:19px;
+	margin-top:7px;
+	color:#444444;
+	text-align:justify;
+	}
+	
+.blocoTextoDetalhe{
+	width:680px;
+	float:left;
+	font-size:14px;
+	font-family:Myriad Pro;
+	margin-left:19px;
+	margin-top:7px;
+	color:#444444;
+	}
+

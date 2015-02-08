@@ -1,0 +1,1 @@
+Sistema Desenvolvido pela <a href="http://www.wtcode.com.br/" target="_blank">WTCODE</a> Todos os direitos Reservados &copy;

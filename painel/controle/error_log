@@ -1,0 +1,23 @@
+[13-Sep-2013 21:56:17 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[12-Oct-2013 09:45:06 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[12-Oct-2013 09:48:28 America/Chicago] PHP Warning:  mysql_connect(): Lost connection to MySQL server at 'reading initial communication packet', system error: 0 in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[12-Oct-2013 09:49:19 America/Chicago] PHP Warning:  mysql_connect(): Lost connection to MySQL server at 'reading initial communication packet', system error: 0 in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[12-Oct-2013 09:53:19 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'dqexhryv_hamacon'@'localhost' (using password: YES) in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[12-Oct-2013 09:53:21 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'dqexhryv_hamacon'@'localhost' (using password: YES) in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[12-Oct-2013 09:53:24 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'dqexhryv_hamacon'@'localhost' (using password: YES) in /home/dqexhryv/public_html/hamacon/painel/controle/conect.php on line 9
+[15-Sep-2014 20:19:21 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[25-Sep-2014 18:43:31 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[03-Oct-2014 00:03:32 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[09-Oct-2014 22:36:53 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[15-Oct-2014 22:44:38 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[20-Oct-2014 00:48:58 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[22-Oct-2014 17:23:36 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[29-Oct-2014 00:08:04 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[03-Nov-2014 13:46:33 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[11-Nov-2014 23:30:13 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[24-Nov-2014 22:21:20 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[03-Dec-2014 22:30:43 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[08-Dec-2014 11:36:55 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[13-Dec-2014 21:38:22 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[07-Jan-2015 21:56:36 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11
+[13-Jan-2015 00:42:22 UTC] PHP Warning:  Unterminated comment starting line 11 in /home/dqexhryv/public_html/exempla.com.br/painel/controle/conect.php on line 11

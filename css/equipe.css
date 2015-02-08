@@ -1,0 +1,61 @@
+.blocopessoa{
+	float:left;
+	width:197px;
+	height:454px;
+	margin-top:45px;
+}
+
+.foto{
+	width:100%;
+	height:194px;
+	float:left;
+	}
+	.foto img{
+		width:100%;
+		height:100%;
+		float:left;
+		border-radius:50%;
+		}
+		
+.nomefunc{
+	margin-top:5px;
+	width:97%;
+	float:left;
+	font-size:22px;
+	font-family:Myriad Pro;
+	padding:3px;
+	color:#37949F;	
+}
+	
+.descricaofunc{
+	width:97%;
+	float:left;
+	height:182px;
+	font-size:15px;
+	font-family:Myriad Pro;
+	padding:3px;
+	text-align:justify;
+	color:#444444;	
+}
+/*	.descricaofunc:hover{
+
+	height:220px;
+	z-index:99;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+	
+}*/
+
+.blocoRedeSocialFunci{
+	width:100%;
+	height:32px;
+	float:left;
+	}
+
+.blocoRedeSocialFunci img{
+	width:30px;
+	height:30px;
+	padding-left:11px;
+	}

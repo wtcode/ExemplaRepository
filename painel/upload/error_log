@@ -1,0 +1,2 @@
+[12-Oct-2013 13:22:20 America/Chicago] PHP Warning:  move_uploaded_file(../../../imagemSite/banner/banners_1.png): failed to open stream: No such file or directory in /home/dqexhryv/public_html/hamacon/painel/controle/upload/upload_imagem.php on line 59
+[12-Oct-2013 13:22:20 America/Chicago] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpRyc4qE' to '../../../imagemSite/banner/banners_1.png' in /home/dqexhryv/public_html/hamacon/painel/controle/upload/upload_imagem.php on line 59
