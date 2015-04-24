@@ -9,8 +9,8 @@
   <?php 
   	$sqlProdutos = "select * from newslletter";
 	$resultProdutos = mysql_query($sqlProdutos,$conect);
+        $num = 0;
 	while($linhaProdutos = mysql_fetch_array($resultProdutos)){
-		$idProdutos = $linhaProdutos['idProdutos'];
 		if($num % 2 == 1) {
 		  $cor="#706c6d"; 
 		  } else { 

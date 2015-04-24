@@ -1,5 +1,5 @@
 <?php
-	if($_GET['cad'] == 1){
+	if(isset($_GET['id']) == 1){
 		include "../painel/clientes.php";
 	} else if($_GET['cad'] == 2) {
 		include "include/grid/grid_parceiros.php";

@@ -1,529 +1,271 @@
-@charset "iso-8859-1";
-
+@charset "utf-8";
 /* CSS Document */
 
-
-
 body{
-
-	background:#363636;
-
-	font-family:Arial, Helvetica, sans-serif;
-
-	font-size:12px;	
-
+    background:#363636;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;	
 }
 
-
-
-table td{
-
-	vertical-align:top;	
-
+.td_menu_principal{
+    vertical-align:top;	
 }
-
-
 
 img{
-
-	border:0px;	
-
+    border:0px;	
 }
-
-
 
 a{
-
-	color:#666;
-
-	text-decoration:none;	
-
+    color:#666;
+    text-decoration:none;	
 }
-
-
 
 #pai{
-
-	position:absolute;
-
-	top:0px;
-
-	left:0px;	
-
-	width:100%;
-
+    position:absolute;
+    top:0px;
+    left:0px;	
+    width:100%;
 }
 
-
-
 #meio{
-
-	background:#F0F0F0;	
+    background:#F0F0F0;	
 
 }
 
 
 
 #topo{
-
-	background:url(../images/topo.jpg) center top repeat-x;
-
-	width:100%;
-
-	height:100px;
-
+    background:url(../images/topo.jpg) center top repeat-x;
+    width:100%;
+    height:100px;
 }
-
-
 
 #corpo{
-
-	width:950px;
-
-	height:auto;	
-
-	/*border-left:#666 solid 1px;
-
-	border-right:#666 solid 1px;*/
-
-	min-height:500px;
-
+    width:950px;
+    height:auto;	
+    /*border-left:#666 solid 1px;
+    border-right:#666 solid 1px;*/
+    min-height:500px;
 }
-
-
 
 #boas_vindas{
-
-	height:auto;
-
-	padding-top:5px;
-
-	padding-bottom:5px;
-
-	font-size:14px;
-
-	background:#676767;
-
-	width:100%;
-
-	color:#CCC;	
-
+    height:auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:14px;
+    background:#676767;
+    width:100%;
+    color:#CCC;	
 }
-
-
 
 #boas_vindas a{
-
-	text-decoration:none;	
-
+    text-decoration:none;	
 }
-
-
 
 .User_painel{
-
-	color:#F0F0F0;	
-
+    color:#F0F0F0;	
 }
-
-
 
 #message_usuario{
-
-	padding-top:15px;
-
-	padding-left:15px;	
-
+    padding-top:15px;
+    padding-left:15px;	
 }
-
-
 
 #deslogar{
-
-	width:auto;
-
-	padding-left:15px;
-
-	padding-right:15px;
-
-	height:auto;
-
-	float:right;
-
-	font-size:14px;
-
-	color:#3887b0;
-
-	font-family:Tahoma, Geneva, sans-serif;
-
+    width:auto;
+    padding-left:15px;
+    padding-right:15px;
+    height:auto;
+    float:right;
+    font-size:14px;
+    color:#3887b0;
+    font-family:Tahoma, Geneva, sans-serif;
 }
-
-
 
 #deslogar a{
-
-	color:#FFF;
-
+    color:#FFF;
 }
-
-
 
 #deslogar a:hover{
-
-	color:#F00;	
-
+    color:#F00;	
 }
-
-
 
 #conteudo{
-
-	padding-top:15px;
-
-	padding-bottom:15px;
-
-	/*padding-left:10px;
-
-	padding-right:10px;	*/
-
+    padding-top:15px;
+    padding-bottom:15px;
+    /*padding-left:10px;
+    padding-right:10px;	*/
 }
 
-
-
 #rodape{
-
-	color:#FFF;
-
-	padding-top:15px;
-
-	padding-bottom:15px;	
-
+    color:#FFF;
+    padding-top:15px;
+    padding-bottom:15px;	
 }
 
 #rodape a{
-
-	color:#F00;
-
+    color:#F00;
 }
-
-
 
 #table_index{
-
-	border:#999 solid 1px;
-
-	margin-top:80px;
-
-	margin-bottom:100px;	
-
+    border:#999 solid 1px;
+    margin-top:80px;
+    margin-bottom:100px;	
 }
-
-
 
 #table_index .titulo_index{
-
-	background:#666;
-
-	color:#FFF;
-
-	font-size:24px;
-
-	padding-top:5px;
-
-	padding-bottom:5px;
-
+    background:#666;
+    color:#FFF;
+    font-size:24px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
-
-
 
 #form_index{
-
-	margin-top:80px;	
-
+    margin-top:80px;	
 }
-
-
 
 #mensage_alerta{
-
-	background:#F00;
-
-	border:#000 dashed 2px;
-
-	position:relative;
-
-	width:350px;
-
-	margin-top:10px;
-
-	margin-bottom:10px;
-
-	padding-left:8px;
-
-	padding-right:8px;
-
-	padding-top:5px;
-
-	padding-bottom:5px;
-
-	color:#FFF;		
-
+    background:#F00;
+    border:#000 dashed 2px;
+    position:relative;
+    width:350px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:#FFF;		
 }
-
-
 
 #disponibilidades{
-
-	border:#000000 solid 1px;
-
-	background:#F0F0F0;
-
-	padding:5px;
-
-	width:460px;
-
-	margin-left:10px;
-
-	min-height:90px;	
-
+    border:#000000 solid 1px;
+    background:#F0F0F0;
+    padding:5px;
+    width:460px;
+    margin-left:10px;
+    min-height:90px;	
 }
-
-
 
 #desc_disponibilidade{
-
-	border:#333 solid 1px;
-
-	background:#FFF;
-
-	margin:4px;
-
-	padding:4px;
-
-	width:210px;
-
-	float:left;	
-
+    border:#333 solid 1px;
+    background:#FFF;
+    margin:4px;
+    padding:4px;
+    width:210px;
+    float:left;	
 }
-
-
 
 #titulo_dispo{
-
-	border:#333 solid 1px;
-
-	background:#FFF;
-
-	margin:2px;
-
-	width:447px;
-
-	padding:2px;
-
-	text-align:center;
-
+    border:#333 solid 1px;
+    background:#FFF;
+    margin:2px;
+    width:447px;
+    padding:2px;
+    text-align:center;
 }
-
-
 
 #texto{
-
-	padding-left:15px;
-
-	padding-right:20px;
-
-	margin-top:8px;	
-
+    padding-left:15px;
+    padding-right:20px;
+    margin-top:8px;	
 }
-
-
 
 #thumb_image{
-
-	float:left;	
-
-	width:auto;
-
-	padding-top:5px;
-
-	padding-bottom:5px;
-
-	padding-left:10px;
-
-	padding-right:10px;
-
-	margin-left:10px;
-
-	margin-bottom:10px;
-
-	border:#000 solid 1px;
-
-	background:#CCC;
-
+    float:left;	
+    width:auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+    border:#000 solid 1px;
+    background:#CCC;
 }
-
-
 
 #thumb_image img{
-
-	margin-bottom:8px;
-
+    margin-bottom:8px;
 }
-
-
-
 .tabela_form{
-
-	background:#BBB;	
-
+    background:#BBB;	
 }
-
-
 
 .tabela_form .titulo{
-
-	background:#333;
-
-	color:#FFF;
-
-	font-size:16px;
-
-	padding-top:8px;
-
-	padding-bottom:8px;
-
-	text-transform:uppercase;
-
+    background:#333;
+    color:#FFF;
+    font-size:16px;
+    padding-top:8px;
+    padding-bottom:8px;
+    text-transform:uppercase;
 }
-
-
 
 .tabela_form .titulo_grid{
-
-	background:#666;
-
-	padding-top:2px;
-
-	padding-bottom:2px;
-
-	padding-left:5px;
-
-	color:#FFF;
-
-	font-size:16px;	
-
+    background:#666;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:5px;
+    color:#FFF;
+    font-size:16px;	
 }
-
-
 
 .tabela_form .corpo_grid{
-
-	color:#000;
-
-	font-size:12px;
-
-	padding-left:8px;
-
-	padding-bottom:5px;
-
-	padding-top:5px;
-
-	padding-right:8px;
-
-	cursor:pointer;
-
-	cursor:hand;	
-
+    color:#000;
+    font-size:12px;
+    padding-left:8px;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-right:8px;
+    cursor:pointer;
+    cursor:hand;	
 }
-
-
 
 .tabela_form .corpo_grid:hover{
-
-	background:#FFF;
-
-	color:#000;
-
+    background:#FFF;
+    color:#000;
 }
-
-
 
 .tabela_form th{
-
-	font-size:13px;
-
-	padding-left:10px;
-
+    font-size:13px;
+    padding-left:10px;
 }
-
-
 
 .tabela_form .submit{
-
-	border:#000 solid 1px;
-
-	margin-bottom:10px;
-
-	margin-top:10px;
-
-	padding-left:8px;
-
-	padding-right:8px;
-
-	padding-top:3px;
-
-	padding-bottom:3px;
-
-	
-
+    border:#000 solid 1px;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:3px;
+    padding-bottom:3px;
 }
-
-
 
 .input{
-
-	border:#333 solid 1px;
-
-	margin-top:5px;
-
-	margin-bottom:5px;	
-
+    border:#333 solid 1px;
+    margin-top:5px;
+    margin-bottom:5px;	
 }
-
-
 
 .submit_index{
-
-	background:#666;
-
-	border:#000 solid 1px;
-
-	padding-left:15px;
-
-	padding-right:15px;
-
-	padding-bottom:2px;
-
-	padding-top:2px;
-
-	color:#FFF;	
-
-	cursor:hand;
-
-	cursor:pointer;
-
+    background:#666;
+    border:#000 solid 1px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:2px;
+    padding-top:2px;
+    color:#FFF;	
+    cursor:hand;
+    cursor:pointer;
 }
 
-
-
 .submit_index:hover{
+    background:#FFF;
+    color:#000;
+    border:#000 solid 1px;
+}
 
-	background:#FFF;
-
-	color:#000;
-
-	border:#000 solid 1px;
-
-		
-
+.form_right{
+    text-align: right;
+    padding: 10px;
 }

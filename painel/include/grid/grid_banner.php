@@ -10,7 +10,7 @@
   <?php 
   	include "controle/conect.php";
   	$sqlProdutos = "SELECT * FROM banner";
-
+        $num = 0;
 	$resultProdutos = mysql_query($sqlProdutos,$conect);
 	while($linhaProdutos = mysql_fetch_array($resultProdutos)){
 		$id_banner = $linhaProdutos['idbanner'];
