@@ -53,7 +53,7 @@
 </head>
     
 <body>
-    <input id="bttOkNewsletter" class="bttNewsletter" type="button" value="OK"/>
+    
     <div class="tudo">
         <?php 
             include("includes/topo.php");
