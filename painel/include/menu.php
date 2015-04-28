@@ -11,14 +11,30 @@ $result = mysql_query($sql);
     $linha = mysql_fetch_array($result);
     if ($linha["ACESSO"] == 1 && $linha["IDMODULO"] == 1) {
         ?>
-
+   
         <li>
             <a href="#">Conteúdo/Páginas</a>
             <ul>
-                <li><a href="conteudo.php?id=1">Institucional</a></li>
-                <li><a href="conteudo.php?id=4">Missão e Visão</a></li>
-                <li><a href="conteudo.php?id=6">Links</a></li>
-                <li><a href="conteudo.php?id=5">Clientes e Parceiros</a></li>
+                <li><a href="#"><b>Empresa</b></a>
+                    <ul>
+                        <li><a href="conteudo.php?id=1">&nbsp;&nbsp;&nbsp;Institucional</a></li>
+                        <li><a href="conteudo.php?id=4">&nbsp;&nbsp;&nbsp;Missão e Visão</a></li>
+                        <li><a href="conteudo.php?id=6">&nbsp;&nbsp;&nbsp;Links</a></li>
+                        <li><a href="cadastramento.php?cad=3">&nbsp;&nbsp;&nbsp;Equipe</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#"><b>Àrea de Atuação</b></a>
+                    <ul>
+                        <li><a href="#">&nbsp;&nbsp;&nbsp;Àrea</a></li>
+                        <li><a href="#">&nbsp;&nbsp;&nbsp;Conteúdo</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="cadastramento.php?cad=2"><b>Portifólio</b></a></li>
+                
+                <li><a href="conteudo.php?id=5"><b>Clientes e Parceiros</b></a></li>
+                
             </ul>
         </li>
 
@@ -61,7 +77,7 @@ $result = mysql_query($sql);
                         <ul>
                                 <li><a href="clientes.php">Listar Clientes</a></li>
                         </ul>
-                </li>-->
+                </li>
 
         <li>
             <a href="#">Cadastros</a>
