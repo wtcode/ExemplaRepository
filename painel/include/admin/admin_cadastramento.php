@@ -8,5 +8,8 @@
 	} else if($_GET['nf'] == 1) {
 		//cadastra funcionario
 		include "include/form/form_funcionario.php";
-	} 
+	} else if($_GET['cad'] == 4) {
+		//cadastra portifolio
+		include "include/grid/grid_portifolio.php";
+	}
 ?>

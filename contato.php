@@ -9,40 +9,43 @@ $MasterPage = new MasterPage();
 
 <title><?php echo $MasterPage->getNomeEmpresa(); ?></title>
 
-		<link rel="shortcut icon" href="imagens/favicon.ico" />
-		<!--CSS Banners -->
-	  	<link rel="stylesheet" href="banners/orbit-1.2.3.css">
-	  	<link rel="stylesheet" href="banners/demo-style.css">
+    <!--JS NewsLetter -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>	
+
+    <link rel="shortcut icon" href="imagens/favicon.ico" />
+    <!--CSS Banners -->
+    <link rel="stylesheet" href="banners/orbit-1.2.3.css">
+    <link rel="stylesheet" href="banners/demo-style.css">
         
-        <!--CSS Página em geral -->
-        <link rel="stylesheet" href="css/frontend.css">
-        <link rel="stylesheet" href="css/contato.css">
+    <!--CSS Página em geral -->
+    <link rel="stylesheet" href="css/frontend.css">
+    <link rel="stylesheet" href="css/contato.css">
 	  	
-		<!--JS Banners -->
-		<script type="text/javascript" src="banners/jquery-1.5.1.min.js"></script>
-		<script type="text/javascript" src="banners/jquery.orbit-1.2.3.min.js"></script>
+    <!--JS Banners -->
+    <script type="text/javascript" src="banners/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="banners/jquery.orbit-1.2.3.min.js"></script>
 
-		<!--JS Funcoes. Galeria e Mascaras -->        
-        <script type="text/javascript" src="js/fucoes.js"></script>
+    <!--JS Funcoes. Galeria e Mascaras -->        
+    <script type="text/javascript" src="js/fucoes.js"></script>
         
-        <!--JS Validação do Formulário -->        
-        <script type="text/javascript" src="js/valida_campos.js"></script>
-		
-			<!--[if IE]>
-			     <style type="text/css">
-			         .timer { display: none !important; }
-			         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
-			    </style>
-			<![endif]-->
-		
-		<!-- Run the plugin for banners -->
-		<script type="text/javascript">
-			$(window).load(function() {
-				$('.featured').orbit();
-			});
-		</script>
-        
+    <!--JS Validação do Formulário -->        
+    <script type="text/javascript" src="js/valida_campos.js"></script>
 
+    <!--[if IE]>
+         <style type="text/css">
+             .timer { display: none !important; }
+             div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+        </style>
+    <![endif]-->
+
+    <!-- Run the plugin for banners -->
+    <script type="text/javascript">
+            $(window).load(function() {
+                    $('.featured').orbit();
+            });
+    </script>
+    
 </head>
 
 <body>

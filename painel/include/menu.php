@@ -31,7 +31,7 @@ $result = mysql_query($sql);
                     </ul>
                 </li>
                 
-                <li><a href="cadastramento.php?cad=2"><b>Portifólio</b></a></li>
+                <li><a href="portifolio.php?id=1"><b>Portifólio</b></a></li>
                 
                 <li><a href="conteudo.php?id=5"><b>Clientes e Parceiros</b></a></li>
                 
