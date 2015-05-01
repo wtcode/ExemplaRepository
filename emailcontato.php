@@ -1,6 +1,6 @@
 <?php
 
-	//Retorna do banco(tab configcontato) as variáveis utilizadas para envio de email -----teste git
+	//Retorna do banco(tab configcontato) as variáveis utilizadas para envio de email
 	
 	include("includes/conect.php");
 	
