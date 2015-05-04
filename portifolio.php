@@ -3,7 +3,7 @@
 include("includes/MasterPage.php"); 
 $MasterPage = new MasterPage();
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -71,7 +71,11 @@ $MasterPage = new MasterPage();
         
         
         <div class="conteudo">
-        
+        <?php					
+            $sql = "SELECT * FROM conteudo where idpagina = 9";
+            $result = mysql_query($sql);
+            while($linha = mysql_fetch_array($result)){
+        ?>
         <?php 
 		//Calcula a margim, se o resto 
 		$i = 1;
@@ -104,91 +108,16 @@ $MasterPage = new MasterPage();
               <!-- <div class="divSobreFoto" id="sobreDiv<?php echo "$i"; ?>">
                </div>-->
                
-               <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
-
-               		<div class="tituloDescricaoPort">
-                    	GRANASA GRANITOS NACIONAIS LTDA
+                <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
+                    <div class="tituloDescricaoPort">
+                        <?php echo $linha['titulo'] ?>
                     </div>
-                    
                     <div class="subdescricaoportifolio">
-                     	Projeto de PSCIP do Complexo de Extração de Granito Santo Antônio do Grama - MG
+                        <?php echo $linha['conteudo'] ?>
                     </div>
-                    
-               </div>
-               
-               
-               
+                </div>
             </div><?php //fim DIV portifolio ?>
-            
-            <div class="portifolio" <?php echo $style; ?>>
-                               
-               <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
-
-               		<div class="tituloDescricaoPort">
-                    	ANGLO AMERICAN
-                    </div>
-                    
-                    <div class="subdescricaoportifolio">
-                     	Projeto de Prevenção e Combate a Incêndio – Planta Industrial – PROJETO MINAS-RIO
-                    </div>
-                    
-               </div>
-               
-            </div><?php //fim DIV portifolio ?>
-            
-            <div class="portifolio" <?php echo $style; ?>>
-                               
-               <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
-
-               		<div class="tituloDescricaoPort">
-                    	 LOCGUEL (Grupo ORGUEL)
-                    </div>
-                    
-                    <div class="subdescricaoportifolio">
-                     	Projeto Galpão de Armazenamento de Equipamentos e Estruturas – MG
-                    </div>
-                    
-               </div>
-               
-            </div><?php //fim DIV portifolio ?>
-            
-            
-            <div class="portifolio" <?php echo $style; ?>>
-                               
-               <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
-
-               		<div class="tituloDescricaoPort">
-                    	STE
-                    </div>
-                    
-                    <div class="subdescricaoportifolio">
-                     	Assessoria em Projeto de Prevenção e Combate a Incêndio e Pânico – Instalações da Universidade UNIFEI – ITABIRA
-                    </div>
-                    
-               </div>
-               
-            </div><?php //fim DIV portifolio ?>
-            
-            <div class="portifolio" <?php echo $style; ?>>
-                               
-               <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
-
-               		<div class="tituloDescricaoPort">
-                    	CENTRAIS ELÉTRICAS DO PARÁ
-                    </div>
-                    
-                    <div class="subdescricaoportifolio">
-                     	CELPA -  Projeto de Prevenção e Combate a Incêndio Escritório de Atendimento Abaetetuba – PA
-                    </div>
-                    
-               </div>
-               
-            </div><?php //fim DIV portifolio ?>
-        <!-- </a>-->
-            
-            <?php 
-			//$i++; 
-			//} //fecha WHILE ?>
+            <?php } ?>
                    
         </div><?php //fim DIV CONTEUDO ?>
         	
@@ -203,8 +132,8 @@ $MasterPage = new MasterPage();
                 
         
     </div><?php //fim DIV TUDO ?>
-    <?php 
-	$MasterPage->CloseMySQL();
-	?>
+    <?php
+        $MasterPage->CloseMySQL();
+    ?>
 </body>
 </html>	
