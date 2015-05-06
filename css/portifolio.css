@@ -36,7 +36,9 @@
 	height:102px;
 	position:absolute;
 	bottom:0px;
-	background-image:url(../imagens/fundodescricaoportifolio.png);	
+	/*background-image:url(../imagens/fundodescricaoportifolio.png);*/
+	background-color: #16A6C1;
+	opacity:0.9;
 	
 	}
 	
