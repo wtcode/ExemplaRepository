@@ -42,14 +42,14 @@
 .mouse_5 {
 	font-family: Arial;	
 	font-size: 15px;
-	color: #37949F;
+	color: #16A6C1;
 }
 .mouse_5:link {
 	text-decoration: none;
 }
 .mouse_5:visited {
 	text-decoration: none;	
-	color: #37949F;
+	color: #16A6C1;
 }
 .mouse_5:hover {
 	text-decoration: none;
@@ -57,7 +57,7 @@
 }
 .mouse_5:active {
 	text-decoration: none;	
-	color: #37949F;
+	color: #16A6C1;
 }
 
             .jcarousel-skin-tango .jcarousel-container-horizontal {
@@ -140,19 +140,19 @@
 
 .button-padrao
 {
-    background: #37949F;
+    background: #16A6C1;
     padding:5px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#006A34), to(#37949F) );
-    background: -moz-linear-gradient(-90deg, #006A34, #37949F);
-    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#006A34', endColorstr='#37949F');
+    background: -webkit-gradient(linear, left top, left bottom, from(#006A34), to(#16A6C1) );
+    background: -moz-linear-gradient(-90deg, #006A34, #16A6C1);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#006A34', endColorstr='#16A6C1');
 }
 
 .button-padrao:hover
 {
     background: #006A34;
-    background: -webkit-gradient(linear, left top, left bottom, from(#37949F), to(#006A34) );
-    background: -moz-linear-gradient(-90deg, #37949F, #006A34);
-    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#37949F', endColorstr='#006A34');            
+    background: -webkit-gradient(linear, left top, left bottom, from(#16A6C1), to(#006A34) );
+    background: -moz-linear-gradient(-90deg, #16A6C1, #006A34);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#16A6C1', endColorstr='#16A6C1');            
 }
 
 .button-padrao:active
@@ -168,7 +168,7 @@
         
         <div class="divmain" style="width:100%; background-image:url(imagens/fundoparceiros.png);">
         	
-            <div class="divmain" style="width:1000px; border-top:2px solid #37949F; border-bottom:2px solid #37949F;">
+            <div class="divmain" style="width:1000px; border-top:2px solid #16A6C1; border-bottom:2px solid #16A6C1;">
             	<!--<table style="width:100%; height:87px;">
                 	<tr>
                     	<td style="vertical-align:middle; text-align:center;">
