@@ -110,10 +110,10 @@ $MasterPage = new MasterPage();
                
                 <div class="descricaoPortifolio" id="descricaoDiv<?php echo "$i"; ?>">
                     <div class="tituloDescricaoPort">
-                        <?php echo $linha['titulo'] ?>
+                        <?php echo utf8_encode($linha['titulo'])  ?>
                     </div>
                     <div class="subdescricaoportifolio">
-                        <?php echo $linha['conteudo'] ?>
+                        <?php echo utf8_encode($linha['conteudo']) ?>
                     </div>
                 </div>
             </div><?php //fim DIV portifolio ?>

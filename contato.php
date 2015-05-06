@@ -136,7 +136,7 @@ $MasterPage = new MasterPage();
        <?php include("includes/rodape.php"); ?>
                 
         
-    </div><?php //fim DIV TUDO ?>
+    </div><?php //fim DIV TUDO   ?>
     <?php 
 	$MasterPage->CloseMySQL();
 	?>
