@@ -33,7 +33,12 @@ $result = mysql_query($sql);
                 
                 <li><a href="portifolio.php?id=1"><b>Portifólio</b></a></li>
                 
-                <li><a href="conteudo.php?id=5"><b>Clientes e Parceiros</b></a></li>
+                <li><a href="#"><b>Clientes e Parceiros</b></a>
+                	<ul>
+                        <li><a href="conteudo.php?id=5">&nbsp;&nbsp;&nbsp;Clientes</a></li>
+                        <li><a href="conteudo.php?id=9">&nbsp;&nbsp;&nbsp;Parceiros</a></li>
+                    </ul>
+                </li>
                 
             </ul>
         </li>
