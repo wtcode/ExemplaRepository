@@ -23,7 +23,7 @@ body{
 a{
 	font-family:Myriad Pro;
 	font-size:20px;
-	color:#37949F;
+	color:#16A6C1;
 	text-decoration:none;
 	/*font-weight:bold;*/
 
@@ -87,7 +87,7 @@ a{
 .textoMenu a{
 	font-family:Myriad Pro;
 	font-size:20px;
-	color:#37949F;
+	color:#16A6C1;
 	text-decoration:none;
 	font-weight:normal;
 
@@ -212,7 +212,7 @@ a{
 
 .rodape{
 	width:100%;
-	background-color:#37949F;
+	background-color:#16A6C1;
 	height:98px;
 	position:relative;	
 	}
