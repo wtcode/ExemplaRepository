@@ -81,7 +81,10 @@ $MasterPage = new MasterPage();
 		$i = 1;
 		$style = "35";
 		
-		/*while($i<=6){
+		/*
+		 * 
+		 * 
+		 * while($i<=6){
 			if($i % 2 == 0){
 				$style = "style='margin-right:0px;margin-left:0px;'";
 				}
