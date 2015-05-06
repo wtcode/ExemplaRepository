@@ -18,8 +18,10 @@
 	}
 	.tituloMenu > a{
 	font-family:Myriad Pro;
-	font-size:20px;
+	font-size:17px;
 	color:#444444;
+	font-weight:bold;
+	
 	}
 .subCategoriaMenu{
 	font-family:Myriad Pro;
