@@ -12,7 +12,7 @@
            		 while ($linha = mysql_fetch_array($result)){
             ?>
               <tr>
-                <td colspan="2" class="tituloMenu"><br /><a style="font-size:16px;" href="areadeatuacao.php?prd=<?php echo $linha['idprodutos'] ?>"><?php echo utf8_encode($linha['titulo']) ?></a></td>
+                <td colspan="2" class="tituloMenu"><a style="font-size:17px; font-weight:bold;" href="areadeatuacao.php?prd=<?php echo $linha['idprodutos'] ?>"><?php echo utf8_encode($linha['titulo']) ?></a></td>
               </tr>
             <?php
 				}
