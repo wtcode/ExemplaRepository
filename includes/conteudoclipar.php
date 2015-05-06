@@ -4,7 +4,7 @@
 
 <?php
 include ("conect.php");					
-	$sql = "SELECT * FROM conteudo where idconteudo = 7";
+	$sql = "SELECT * FROM conteudo where idpagina = 10";
 	$result = mysql_query($sql);
 	$linha = mysql_fetch_array($result);
 	echo "<center>".$linha["descricao"]."</center>";
@@ -17,7 +17,7 @@ include ("conect.php");
 <div class="conteudo">
 
 <?php
-	$sql = "SELECT * FROM conteudo where idconteudo = 16";
+	$sql = "SELECT * FROM conteudo where idpagina = 11";
 	$result = mysql_query($sql);
 	$linha = mysql_fetch_array($result);
 	echo "<center>".$linha["descricao"]."</center>";

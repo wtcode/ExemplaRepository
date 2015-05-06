@@ -35,8 +35,8 @@ $result = mysql_query($sql);
                 
                 <li><a href="#"><b>Clientes e Parceiros</b></a>
                 	<ul>
-                        <li><a href="conteudo.php?id=5">&nbsp;&nbsp;&nbsp;Clientes</a></li>
-                        <li><a href="conteudo.php?id=9">&nbsp;&nbsp;&nbsp;Parceiros</a></li>
+                        <li><a href="conteudo.php?id=10">&nbsp;&nbsp;&nbsp;Clientes</a></li>
+                        <li><a href="conteudo.php?id=11">&nbsp;&nbsp;&nbsp;Parceiros</a></li>
                     </ul>
                 </li>
                 
