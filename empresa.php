@@ -71,22 +71,32 @@
                 } else {
                     $opcao = "a-empresa";
                 }
-                $sql = "SELECT * FROM conteudo where urlamigavel='$opcao'";
-                $result = mysql_query($sql);
-
-                if ($opcao == "equipe") {
-                    echo "<div class=\"tituloPagina\">Equipe</div>";
-                    include("includes/menulateralempresa.php");
-                    //DEPOIS QUE CADASTRAR OS FUNCIONÁRIOS DESCOMENTAR AS DUAS LINHAS ABAIXO.
-                    include("equipe.php");
-                    //echo "<div style='float:left; margin-left:50px;'> <p style='font-family: Myriad Pro; font-size:45px; color:#444444;'> Em breve!! </p> </div>";
-                }
-
-                if (mysql_affected_rows() < 1) {
-                    //include("includes/menulateralempresa.php");	
-                }
-
-                while ($linha = mysql_fetch_array($result)) {
+                
+                if ($opcao == "links"){
+                	$opcao = "";
+                	echo "<div class=\"tituloPagina\">Links</div>";
+                	include("includes/menulateralempresa.php");
+                	echo "<div class=\"blocoTextoDetalhe\" style=\"width:756px; float:right; margin-top:13px;\">";
+                	include("includes/links.php");
+                	echo "</div>";
+                }else{
+                
+	                $sql = "SELECT * FROM conteudo where urlamigavel='$opcao'";
+	                $result = mysql_query($sql);
+	
+	                if ($opcao == "equipe") {
+	                    echo "<div class=\"tituloPagina\">Equipe</div>";
+	                    include("includes/menulateralempresa.php");
+	                    //DEPOIS QUE CADASTRAR OS FUNCIONÁRIOS DESCOMENTAR AS DUAS LINHAS ABAIXO.
+	                    include("equipe.php");
+	                    //echo "<div style='float:left; margin-left:50px;'> <p style='font-family: Myriad Pro; font-size:45px; color:#444444;'> Em breve!! </p> </div>";
+	                }
+	
+	                if (mysql_affected_rows() < 1) {
+	                    //include("includes/menulateralempresa.php");	
+	                }
+	
+	                while ($linha = mysql_fetch_array($result)) {
             ?>
             <div class="tituloPagina">
                 <?php echo utf8_encode($linha["titulo"]); ?>
@@ -97,6 +107,7 @@
             </div>
             <?php
                 }
+             }
             ?>
         </div><?php //fim DIV CONTEUDO  ?>
         <div class="clear" style="height:55px;">
