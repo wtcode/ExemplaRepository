@@ -3,11 +3,12 @@
 <div class="conteudo">
 
 <?php
-include ("conect.php");					
-	$sql = "SELECT * FROM conteudo where idpagina = 10";
+//include ("conect.php");					
+	/* $sql = "SELECT * FROM conteudo where idpagina = 10";
 	$result = mysql_query($sql);
 	$linha = mysql_fetch_array($result);
-	echo "<center>".$linha["descricao"]."</center>";
+	echo "<center>".$linha["descricao"]."</center>"; */
+include ("linksclientes.php");
 ?>
 
 </div><?php //fim DIV CONTEUDO ?>
@@ -17,10 +18,11 @@ include ("conect.php");
 <div class="conteudo">
 
 <?php
-	$sql = "SELECT * FROM conteudo where idpagina = 11";
+	/* $sql = "SELECT * FROM conteudo where idpagina = 11";
 	$result = mysql_query($sql);
 	$linha = mysql_fetch_array($result);
-	echo "<center>".$linha["descricao"]."</center>";
+	echo "<center>".$linha["descricao"]."</center>"; */
+include ("linksparceiros.php");
 ?>
 
 </div><?php //fim DIV CONTEUDO ?>

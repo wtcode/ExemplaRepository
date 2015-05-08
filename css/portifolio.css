@@ -57,3 +57,16 @@
 	float:left;
 	
 	}
+.linksclipar{
+	background-color: #37929F;
+	width: 250px;
+	height: 120px;
+	float: left;
+	}
+#imglink{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-50px;
+	margin-left:-50px;
+}
