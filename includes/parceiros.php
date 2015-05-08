@@ -196,40 +196,56 @@
                              <div id="wrap" style="height:80px; margin-top:17px;">
                                     <ul id="mycarousel" class="jcarousel-skin-tango" style="height: 65px; line-height: 65px; vertical-align: middle;">
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/parceiro3.png"/></a>
+                                            <a href='http://www.abho.org.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/abho.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/parceiro2.png"/></a>
+                                            <a href='http://ames.eng.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/ames.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/creaparceiro.png"/></a>
+                                            <a href='https://www.cbm.df.gov.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/bombdf.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/parceiro3.png"/></a>
+                                            <a href='http://www.cb.es.gov.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/bombes.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/parceiro2.png"/></a>
+                                            <a href='http://www.bombeiros.pa.gov.br' target='_blank'>
+                                                <img border="0"  src="imagens/links/bombpa.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/creaparceiro.png"/></a>
+                                            <a href='http://www.corpodebombeiros.sp.gov.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/bombsp.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/parceiro3.png"/></a>
+                                            <a href='http://www.crea-mg.org.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/creaparceiro.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/parceiro2.png"/></a>
+                                            <a href='http://www.abnt.org.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/parceiroABNT.png"/></a>
                                         </li>
                                         <li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
-                                            <a href='index.php' target='_self'>
-                                                <img border="0"  src="imagens/creaparceiro.png"/></a>
+                                            <a href='http://eurocodes.jrc.ec.europa.eu/' target='_blank'>
+                                                <img border="0"  src="imagens/links/parceiroEurocodes.png"/></a>
+                                        </li>
+										<li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
+                                            <a href='http://www.fundacentro.gov.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/parceiroFundaCentro.png"/></a>
+                                        </li>
+										<li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
+                                            <a href='http://www.ipt.br/' target='_blank'>
+                                                <img border="0"  src="imagens/links/parceiroIPT.png"/></a>
+                                        </li>
+										<li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
+                                            <a href='http://portal.mte.gov.br/portal-mte/' target='_blank'>
+                                                <img border="0"  src="imagens/links/parceiroMTE.png"/></a>
+                                        </li>
+										<li style="display: block; height: 65px; line-height: 65px; vertical-align: middle;">
+                                            <a href='http://www.nfpa.org/' target='_blank'>
+                                                <img border="0"  src="imagens/links/parceiroNFPA.png"/></a>
                                         </li>
                                     </ul>
                               </div>
