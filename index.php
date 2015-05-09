@@ -15,7 +15,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/ajax.js"></script>	
         
-        
     <!--CSS Banners -->
     <link rel="stylesheet" href="banners/orbit-1.2.3.css">
     <link rel="stylesheet" href="banners/demo-style.css">
