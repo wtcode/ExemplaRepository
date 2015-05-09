@@ -1,6 +1,6 @@
 .tituloPagina{
-	margin-top: 51px; font-size:25px; font-family:Myriad Pro; color:#37929F; padding-left:5px; width: 990px;
-	background-image:url(../imagens/separatitulopublicacoes.jpg); background-position:bottom left;	background-repeat:no-repeat;
+	margin-top: 51px; font-size:25px; font-family:Myriad Pro; color:#16A6C1; padding-left:5px; width: 990px;
+	background-image:url(../imagens/separador_titulo_produto.png); background-position:bottom left;	background-repeat:no-repeat;
 }
 
 .blocoPublicacao{
@@ -23,7 +23,7 @@
 	
 .barraTitulo{
 	width:100%;
-	background-color:#37939F;
+	background-color:#16A6C1;
 	/*height:35px;*/
 	color:#FFF;
 	float:left;
@@ -41,7 +41,7 @@
 	
 .barraLeiaMais{
 	width:182px;
-	background-color:#37939F;
+	background-color:#16A6C1;
 	height:35px;
 	color:#FFF;
 	float:left;

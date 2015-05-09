@@ -44,7 +44,7 @@
                      <img onerror="this.onerror=null;this.src='imagens/sem_imagem_prd.jpg';" src="imagens/miniaturas/thumb_<?php echo $linha["patch"]; ?>" />
                   </div>
                     
-                    <div style="position:absolute; float:right; background-image:url(imagens/bttplus.png); height:40px; width:40px; background-repeat:no-repeat; margin-top:127px; margin-left:235px;">
+                    <div style="position:absolute; float:right; background-image:url(imagens/bttplus.png); height:40px; width:40px; background-repeat:no-repeat; margin-top:129px; margin-left:235px;">
                     </div>
                     
                </div><?php //fim DIV FOTO PRODUTO ?>     
