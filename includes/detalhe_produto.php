@@ -5,13 +5,21 @@
 		$opcao = $_GET["prd"];
 	}
 	if($opcao == ""){
-		$sql = "SELECT * 
-				FROM produtos
-				where idprodutos=74";
+		$sql = "SELECT * FROM produtos p
+					LEFT JOIN imagem_produto i ON p.idprodutos = i.idprodutos
+					WHERE p.idhabilitado = '1' and
+					p.idcategoria = '11' and 
+					p.idprodutos = 74";
 	}else{
-		$sql = "SELECT * 
+		/* $sql = "SELECT * 
 				FROM produtos
 				where idprodutos=$opcao";
+		 */
+		$sql = "SELECT * FROM produtos p
+					LEFT JOIN imagem_produto i ON p.idprodutos = i.idprodutos
+					WHERE p.idhabilitado = '1' and
+					p.idcategoria = '11' and 
+					p.idprodutos = $opcao";
 	}			
 
 	$result = mysql_query($sql);
@@ -22,7 +30,7 @@
 ?>
 
 
-        <div class="blocoPublicacaoDetalhe">
+        <div class="blocoPublicacaoDetalhe" style="margin-top:25px;">
         	
             <div class="barraTitulo tdData">
             	<table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
@@ -45,6 +53,7 @@
             </div>-->
             
             <div class="blocoTextoDetalhe">
+            	<img style="float:left;margin-left:10px; margin-right:10px;" src="imagens/miniaturas/thumb_<?php echo $linha["patch"]; ?>" alt="">
             	<?php echo $linha['descricao']; ?>
             </div>
             
