@@ -31,15 +31,15 @@
               
               
               <tr>
-                <td colspan="2" class="tituloMenu"><br />
+                <td colspan="2" class="tituloMenu">
                 <a href="empresa.php?opcao=missao-e-visao">Missão e Visão</a>
                 </td>
               </tr>
               <tr>
-                <td colspan="2" class="tituloMenu"><br /><a href="empresa.php?opcao=equipe">Equipe</a></td>
+                <td colspan="2" class="tituloMenu"><a href="empresa.php?opcao=equipe">Equipe</a></td>
               </tr>
               <tr>
-                <td colspan="2" class="tituloMenu"><br /><a href="empresa.php?opcao=links">Links</a></td>
+                <td colspan="2" class="tituloMenu"><a href="empresa.php?opcao=links">Links</a></td>
               </tr>
               
               

@@ -44,6 +44,15 @@
             $('.featured').orbit();
         });
     </script>
+    
+    <script type="text/javascript">
+			<?php $opcao = $_GET["opcao"]; ?>
+            function detalheProd(){
+                $('html, body').animate({
+                    scrollTop: $("#scroll").offset().top
+                }, 1000);
+    		}
+	</script>
 
     <style type="text/css">
         .tituloPagina{
@@ -53,7 +62,7 @@
     </style>
 </head>
     
-<body>
+<body onload="<?php  if(isset($opcao)){?>detalheProd();<?php }?>">
     <div class="tudo">
         <?php
             include("includes/topo.php");
@@ -62,12 +71,13 @@
             }
             include("includes/breadcumps.php"); 
         ?>
-        <div class="conteudo" style="margin:-10px auto;">        
+        <div class="conteudo" style="margin:-10px auto;">  
+         <a id="scroll"></a>      
             <?php
                 $opcao = "";
                 if (isset($_GET["opcao"])) {
                     $opcao = $_GET["opcao"];
-                    echo "<script type=\"text/javascript\"> $(document).ready(function(){ $(\"body\").scrollTop(500); }) </script>";
+                    //echo "<script type=\"text/javascript\"> $('html, body').animate({scrollTop: $(\"#scroll\").offset().top}, 1000); </script>";
                 } else {
                     $opcao = "a-empresa";
                 }
@@ -98,7 +108,9 @@
 	
 	                while ($linha = mysql_fetch_array($result)) {
             ?>
+            
             <div class="tituloPagina">
+           
                 <?php echo utf8_encode($linha["titulo"]); ?>
             </div>
              <?php include("includes/menulateralempresa.php"); ?>
