@@ -53,7 +53,7 @@
             </div>-->
             
             <div class="blocoTextoDetalhe">
-            	<img style="float:left;margin-bottom:10px; margin-right:10px;" src="imagens/miniaturas/thumb_<?php echo $linha["patch"]; ?>" alt="">
+            	<img style="float:left;margin-bottom:10px; margin-right:22px;" src="imagens/miniaturas/thumb_<?php echo $linha["patch"]; ?>" alt="">
             	<?php echo $linha['descricao']; ?>
             </div>
             
