@@ -14,7 +14,7 @@
 </div>
 
 <div class="linksclipar">
-	<a href='www.sscoenper.com.br/' target='_blank'> <img border="0"
+	<a href='http://www.sscoenper.com.br/' target='_blank'> <img border="0"
 		src="imagens/links/sscoenper.png" /></a>
 </div>
 
