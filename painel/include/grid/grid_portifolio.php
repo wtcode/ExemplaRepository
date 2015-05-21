@@ -3,7 +3,7 @@
       
     <th colspan="8" class="titulo" align="center">
         Portifólio  
-        <a href="produtos.php?pt=1" style="float:right; position:relative; margin-right:10px;"><img src="images/add.png" /> <br />  Adicionar</a>
+        <a href="portifolio.php" style="float:right; position:relative; margin-right:10px;"><img src="images/add.png" /> <br />  Adicionar</a>
     </th>
   </tr>
   <tr>

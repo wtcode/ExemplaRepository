@@ -15,7 +15,8 @@ $pagina = 1;
 
     <script src="js/jquery-1.2.1.min.js" type="text/javascript"></script>
     <script src="js/menu-collapsed.js" type="text/javascript"></script>
-    <script type="text/javascript">
+   
+   	<script type="text/javascript">
         function getValor(valor) {
 
             $("#recebeValor").html("<option value='0'>Carregando...</option>");
@@ -25,6 +26,7 @@ $pagina = 1;
         }
         ;
     </script>
+   
     <?php include "include/validaBotoes.php" ?>
     <body>
         <div id="pai">
