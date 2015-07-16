@@ -16,34 +16,34 @@
 <script src="js/jquery-1.2.1.min.js" type="text/javascript"></script>
 <script src="js/menu-collapsed.js" type="text/javascript"></script>
 <body>
-<div id="pai">
-	<div id="topo">
+	<div id="pai">
+		<div id="topo">
     	<?php include "include/topo.php" ?>
     </div>
-    <div id="meio" align="center">
-    	<div id="corpo" align="left">
+		<div id="meio" align="center">
+			<div id="corpo" align="left">
         <?php
 			include "include/boasVindas.php";
 		?>
         	<div id="conteudo">
-			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td width="21%">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="21%" valign="top">
 				<?php 
 					include ("include/menu.php");
 				?>
 				</td>
-                <td width="79%">
+							<td width="79%" valign="top">
 					<?php include ("include/admin/admin_link.php"); ?>
                 </td>
-              </tr>
-            </table>
-            </div>   
-        </div>
-    </div>
-    <div id="rodape" align="center">
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="rodape" align="center">
     	<?php include "include/rodape.php" ?>
     </div>
-</div>
+	</div>
 </body>
 </html>

@@ -1,30 +1,31 @@
+<?php $pg = $_GET['pg']; ?>
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabela_form" id="resultado">
   <tr>
       
     <th colspan="8" class="titulo" align="center">
-        Portifólio  
-        <a href="portifolio.php" style="float:right; position:relative; margin-right:10px;"><img src="images/add.png" /> <br />  Adicionar</a>
+        Links 
+        <a href="link.php?pg=<?php echo $pg ?>php " style="float:right; position:relative; margin-right:10px;"><img src="images/add.png" /> <br />  Adicionar</a>
     </th>
   </tr>
   <tr>
-      <td width="64%" class="titulo_grid" colspan="3">Título</td>
-    <td width="8%" class="titulo_grid"></td>
-    <td width="7%" class="titulo_grid"></td>
-    <td width="9%" class="titulo_grid"></td>
-    <td width="12%" class="titulo_grid" colspan="2" ><center>Ações</center></td>
+    <td width="30%" class="titulo_grid">Imagem</td>
+    <td width="30%" class="titulo_grid">Nome</td>
+    <td width="30%" class="titulo_grid">Link</td>
+    <td width="10%" class="titulo_grid" colspan="2" ><center>Ações</center></td>
     
   </tr>
 <?php
-	
-	$sqlGridServico = "select c.idconteudo, c.titulo, c.conteudo from conteudo c where c.idpagina=9 order by c.idconteudo" ;
+	$sqlGridServico = "select l.nome, l.link, l.patch, l.idlink, l.idpagina  from link l where l.idpagina= $pg" ;
 	
 	$resultGridServico = mysql_query($sqlGridServico,$conect);
-        $num = 0;
+    $num = 0;
 	while($linhaGridServico = mysql_fetch_array($resultGridServico)){
 		
-		$titulo   = $linhaGridServico['titulo'];
-		$conteudo = $linhaGridServico['conteudo'];
-                $idconteudo = $linhaGridServico['idconteudo'];
+		$nome   = $linhaGridServico['nome'];
+		$link = $linhaGridServico['link'];
+        $patch = $linhaGridServico['patch'];
+        $idlink = $linhaGridServico['idlink'];
+        $idpagina = $linhaGridServico['idpagina'];
 			
 		if($num % 2 == 1) {
 		  $cor="#DDDDDD"; 
@@ -35,33 +36,13 @@
 		$num = $num + 1;
 ?>
   <tr bgcolor="<?php echo $cor; ?>" class="corpo_grid">
-    <td class="corpo_grid"><?php  echo $linhaGridServico['titulo'] ?></td>
-    <td class="corpo_grid"></td>
-    <td class="corpo_grid" align="center"></td>
-    <td class="corpo_grid"></td>
+    <td class="corpo_grid"><img border="0" src="../imagens/links/<?php  echo $patch ?>" /></td>
+    <td class="corpo_grid"><?php  echo $nome ?></td>
+    <td class="corpo_grid"><?php  echo $link ?></td>
+    <td class="corpo_grid"><a href="link.php?id=2&lnk=<?php echo $idlink ?>&pg=<?php echo $idpagina ?>"><img src="images/document_edit.png"  title="Editar" alt="Editar"/></a></td>
     <td class="corpo_grid">
-		<?php 
-		/*if($linhaGridServico['destaque_home'] == 1){
-			echo "<a href='controle/update/edita_estatus_produto.php?hom=2&id=".$linhaGridServico['idprodutos']."'><img src='images/home.png' title='Desabilitar Para home'></a>";
-		} else {
-			echo "<a href='controle/update/edita_estatus_produto.php?hom=1&id=".$linhaGridServico['idprodutos']."'><img src='images/home2.png' title='Habilitar Para home'></a>";	
-		}*/
-		 ?>
-        </td>
-    <td class="corpo_grid">
-    <?php 
-		/*if($linhaGridServico['destaque_topo'] == 1){
-			echo "<a href='controle/update/edita_estatus_produto.php?topo=2&id=".$linhaGridServico['idprodutos']."'><img src='images/topo.png' title='Desabilitar Para Topo'></a>";
-		} else {
-			echo "<a href='controle/update/edita_estatus_produto.php?topo=1&id=".$linhaGridServico['idprodutos']."'><img src='images/topo2.png' title='Habilitar Para Topo'></a>";	
-		}*/
-	?>
-    </td>
-    <td class="corpo_grid"><a href="portifolio.php?id=2&cont=<?php echo $linhaGridServico['idconteudo'] ?>"><img src="images/document_edit.png"  title="Editar" alt="Editar"/></a></td>
-    <td class="corpo_grid">
-    <!--<a href="controle/delete/deleta_produto.php?id=<?php echo $linhaGridServico['titulo'] ?>"><img src="images/delete2.png" title="Excluir" alt="Ecluir" /></a>-->
-    <a href="controle/delete/delete_portifolio.php?id=<?php echo $linhaGridServico['idconteudo'] ?>" class="item-excluir" id="<?php echo $linhaGridServico['idconteudo'] ?>"><img src="images/delete2.png"  alt="Excluir"  title="Excluir"/></a>
-    </td>
+	    <a href="controle/delete/delete_link.php?id=<?php echo $idlink ?>" class="item-excluir" id="<?php echo $idlink ?>"><img src="images/delete2.png"  alt="Excluir"  title="Excluir"/></a>
+	</td>
   </tr>
 <?php
 	}
@@ -80,7 +61,7 @@
 					1: {
 						label		: 'sim',
 						tipo		: 'link',
-						endereco	: 'controle/delete/delete_portifolio.php?id='+codigo
+						endereco	: 'controle/delete/delete_link.php?id='+codigo
 					},
 					2: {
 						label		: 'n&atilde;o',

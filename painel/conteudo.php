@@ -28,7 +28,7 @@
         	<div id="conteudo">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="21%">
+                <td width="21%" valign="top">
 				<?php 
 					include ("include/menu.php");
 				?>

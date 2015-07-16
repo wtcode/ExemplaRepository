@@ -1,15 +1,18 @@
 <?php
 	include "../conect.php";
-	$idProduto = $_POST['id'];
-	$bairro = $_POST['bairro'];
-	$valor = $_POST['valor'];
+	$idlink = $_POST['idlink'];
+	$nome = $_POST['nome'];
+	$patch = $_POST ['patch'];
+	$link = $_POST ['link'];
 	
 	
-	$sqlUpdateConteudo = "update frete set bairro = '$bairro', valor = '$valor' where idfrete = '$idProduto' ";
+	$sqlUpdateConteudo = "update link set nome = '$nome', patch = '$patch', link = '$link' where idlink = '$idlink' ";
 	$resultUpdateConteudo = mysql_query($sqlUpdateConteudo,$conect);
 
-
+	$_SESSION['idlink'] = $idlink;
+	include "../upload/fotos_link.php";
+	
 	echo "<script>
-			location.href = '../../frete.php?id=$idProduto';
+			location.href = '../../link.php?id=1&pg=6';
 		  </script>";
 ?>
