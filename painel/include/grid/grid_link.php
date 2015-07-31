@@ -1,12 +1,19 @@
-<?php $pg = $_GET['pg']; ?>
+<?php 
+if (isset($_GET['pg'])){
+	$pg = $_GET['pg'];
+} else $pg=0;
+
+?>
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabela_form" id="resultado">
+  
   <tr>
       
     <th colspan="8" class="titulo" align="center">
         Links 
-        <a href="link.php?pg=<?php echo $pg ?>php " style="float:right; position:relative; margin-right:10px;"><img src="images/add.png" /> <br />  Adicionar</a>
+        <a href="link.php?pg=6" style="float:right; position:relative; margin-right:10px;"><img src="images/add.png" /> <br />  Adicionar</a>
     </th>
   </tr>
+  
   <tr>
     <td width="30%" class="titulo_grid">Imagem</td>
     <td width="30%" class="titulo_grid">Nome</td>
@@ -15,7 +22,7 @@
     
   </tr>
 <?php
-	$sqlGridServico = "select l.nome, l.link, l.patch, l.idlink, l.idpagina  from link l where l.idpagina= $pg" ;
+	$sqlGridServico = "select l.nome, l.link, l.patch, l.idlink, l.idpagina  from link l where l.idpagina= 6" ;
 	
 	$resultGridServico = mysql_query($sqlGridServico,$conect);
     $num = 0;

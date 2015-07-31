@@ -31,9 +31,9 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 
 			$handle->file_max_size			 = $tamanhoMaximo;
 
-			$handle->image_x                 = 727;
+			$handle->image_x                 = 115;
 
-			$handle->image_y       			 = 515;
+			$handle->image_y       			 = 66;
 
 			$handle->image_resize            = true;
 
@@ -72,7 +72,7 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 			$_SESSION["nomeImage"] =  $handle->file_dst_name;
 
 			$imagem = $_SESSION["nomeImage"];
-
+			/*
 			$nomeThumb = "thumb_".$nomeGrande;
 
 			// Aqui nos devifimos nossas configura��es de imagem do thumbs			
@@ -94,7 +94,7 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 			// Definimos a pasta para onde a imagem thumbs ser� armazenada
 
 			$handle->process('../../../imagens/links/miniaturas/');
-
+*/
 			// Excluimos os arquivos temporarios
 
 			$handle-> clean();
@@ -120,17 +120,17 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 		 } 
 
         // Aqui somente recupero o nome da imagem caso queira fazer um insert em banco de dados
-/*
+
 		$nome_da_imagem = $handle->file_dst_name;
 
-	  	$idProdutos = $GLOBALS['idProdutos'];
+	  	$idLink = $GLOBALS['idlink'];
 
-		$sqlInsertImage = "insert into imagem_produto (idprodutos,patch) values ('$idProdutos','$imagem')";
+		$sqlUpdateImage = "update link set patch = '$imagem' where idlink = $idLink";
 
-		$resultInsertImage = mysql_query($sqlInsertImage,$conect);
+		$resultInsertImage = mysql_query($sqlUpdateImage,$conect);
 
 		mysql_close($conect);
-*/
+
 }
 
 if ($_POST['acao'] == 'imagem') {
