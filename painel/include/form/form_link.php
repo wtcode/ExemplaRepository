@@ -49,11 +49,11 @@ if (isset ( $_GET ['lnk'] )) {
 				<input type="file" name="imagem1" id="imagem1" class="input"> 
 				<input type="hidden" name="acao" value="imagem"> <br>
 				<?php
-					if ($titulo_form == "Editar Link") {
+					if ($titulo_form == "Editar Link" && $patch != null) {
 				?>  	
 				<div id='thumb_image'>
 					<img src="../imagens/links/<?php echo $patch ?>"> <br> <a
-						href='controle/delete/delete_imagem_link.php?id=$id_link'>Excluir</a>
+						href='controle/delete/delete_imagem_link.php?id=<?php echo $idlink ?>'>Excluir</a>
 				</div>"</td>
 			<?php  } ?>
 		</tr>

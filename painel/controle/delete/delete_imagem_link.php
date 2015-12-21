@@ -3,21 +3,23 @@
 	
 	$id = $_GET['id'];	
 	
-	$sql = "select * from imagem_link where idimagem_produto = '$id'";
+	$sql_imagem_produto = "select * from link where idlink = '$id'";
 	$result_imagem_produto = mysql_query($sql_imagem_produto,$conect);
 	$linha_imagem_produto = mysql_fetch_array($result_imagem_produto);
-	$imagem = $linha_imagem_produto['patch'];
+	$imagem = $linha_imagem_produto['patch'];	
+	$caminho_imagem = "../../../imagens/links/".$imagem;
+
+	//exclusão da imagem no servidor
+	unlink($caminho_imagem);
+
+	//exclusão do nome da imagem no banco de dados
+	$sql_delete_imagem = "update link set pach='' where idlink = '$id'";
+	$result_delete_imagem = mysql_query($sql_delete_imagem,$conect);
+
+	//echo $result_delete_imagem;
 	
-	$caminho_imagem = "../../../imagemSite/".$imagem;
-	$caminho_thumb = "../../../imagemSite/thumb/thumb_".$imagem;
-		
-		unlink($caminho_imagem);
-		unlink($caminho_thumb);
-			
-		$sql_delete_imagem = "delete from imagem_produto where idimagem_produto = '$id'";
-		$result_delete_imagem = mysql_query($sql_delete_imagem,$conect);
-	
+	//retorna para a tela de seleção
 	echo "<script>";
-	echo "location.href = '../../produtos.php?pt=1&prod=$prod'";
+	echo "location.href = '../../link.php?id=2&lnk=$id&pg=6'";
 	echo "</script>";
 ?>

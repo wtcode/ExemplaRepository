@@ -43,7 +43,11 @@ if (isset($_GET['pg'])){
 		$num = $num + 1;
 ?>
   <tr bgcolor="<?php echo $cor; ?>" class="corpo_grid">
+  	<?php  if ($patch != null) {?>
     <td class="corpo_grid"><img border="0" src="../imagens/links/<?php  echo $patch ?>" /></td>
+    <?php  } else { ?>
+    <td class="corpo_grid"><img border="0" src="../imagens/links/semimagem.gif" /></td>
+    <?php  } ?>
     <td class="corpo_grid"><?php  echo $nome ?></td>
     <td class="corpo_grid"><?php  echo $link ?></td>
     <td class="corpo_grid"><a href="link.php?id=2&lnk=<?php echo $idlink ?>&pg=<?php echo $idpagina ?>"><img src="images/document_edit.png"  title="Editar" alt="Editar"/></a></td>
