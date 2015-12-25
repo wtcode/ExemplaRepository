@@ -7,6 +7,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<meta name="google-site-verification" content="qUxXKhcViLIAL3LnIuvI0Vkz4HBlbUK-FhQGqe4Z60w" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><?php echo $MasterPage->getNomeEmpresa(); ?></title>
     <link rel="shortcut icon" href="imagens/favicon.ico" />
