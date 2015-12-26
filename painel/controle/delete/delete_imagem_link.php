@@ -13,7 +13,7 @@
 	unlink($caminho_imagem);
 
 	//exclusão do nome da imagem no banco de dados
-	$sql_delete_imagem = "update link set pach='' where idlink = '$id'";
+	$sql_delete_imagem = "update link set patch='' where idlink = '$id'";
 	$result_delete_imagem = mysql_query($sql_delete_imagem,$conect);
 
 	//echo $result_delete_imagem;
