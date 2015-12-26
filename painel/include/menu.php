@@ -1,6 +1,6 @@
 <?php
 include("controle/conect.php");
-$sql = "select * from ACESSO order by IDMODULO";
+$sql = "select * from acesso order by idmodulo";
 $result = mysql_query($sql);
 ?>
 
@@ -13,7 +13,7 @@ $result = mysql_query($sql);
         ?>
    
         <li>
-            <a href="#">Conteúdo/Páginas</a>
+            <a href="#">Conteúdo/Páginas oi</a>
             <ul>
                 <li><a href="#"><b>Empresa</b></a>
                     <ul>
