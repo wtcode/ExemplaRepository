@@ -13,7 +13,7 @@ $result = mysql_query($sql);
         ?>
    
         <li>
-            <a href="#">Conteúdo/Páginas oi</a>
+            <a href="#">Conteúdo/Páginas</a>
             <ul>
                 <li><a href="#"><b>Empresa</b></a>
                     <ul>
