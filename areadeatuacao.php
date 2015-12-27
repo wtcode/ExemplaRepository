@@ -17,43 +17,41 @@ $MasterPage = new MasterPage();
 <link rel="shortcut icon" href="imagens/favicon.ico" />
 <!--CSS Banners -->
 <link rel="stylesheet" href="banners/orbit-1.2.3.css">
-	<link rel="stylesheet" href="banners/demo-style.css">
+<link rel="stylesheet" href="banners/demo-style.css">
 
-		<!--CSS Página em geral -->
-		<link rel="stylesheet" href="css/frontend.css">
-			<link rel="stylesheet" href="css/empresa.css">
-				<link rel="stylesheet" href="css/publicacoes.css">
+<!--CSS Página em geral -->
+<link rel="stylesheet" href="css/frontend.css">
+<link rel="stylesheet" href="css/empresa.css">
+<link rel="stylesheet" href="css/publicacoes.css">
 
-					<!--JS Banners -->
-					<script type="text/javascript" src="banners/jquery-1.5.1.min.js"></script>
-					<script type="text/javascript"
-						src="banners/jquery.orbit-1.2.3.min.js"></script>
+<!--JS Banners -->
+<script type="text/javascript" src="banners/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="banners/jquery.orbit-1.2.3.min.js"></script>
 
-					<!--[if IE]>
-         <style type="text/css">
+<!--[if IE]>
+   <style type="text/css">
              .timer { display: none !important; }
              div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
         </style>
-    <![endif]-->
+<![endif]-->
 
 					<!-- Run the plugin for banners -->
-					<script type="text/javascript">
+	<script type="text/javascript">
             $(window).load(function() {
                     $('.featured').orbit();
 
                    
             });
-            
-    </script>
+	</script>
 
 	<script type="text/javascript">
 			<?php $opcao = $_GET["prd"]; ?>
-            function detalheProd(){
-                $('html, body').animate({
-                    scrollTop: $("#scroll").offset().top
-                }, 1000);
-    		}
-	</script>
+	            function detalheProd(){
+	                $('html, body').animate({
+	                    scrollTop: $("#scroll").offset().top
+	                }, 1000);
+	    		}
+		</script>
 
 </head>
 
@@ -64,12 +62,11 @@ $MasterPage = new MasterPage();
 			include("includes/topo.php");
 		 ?>
 
-
         <?php
 		if ($MasterPage->VerificaBanners() >= 1){
-		 		include("includes/banners.php"); 
-				}
-		 ?>
+		 	include("includes/banners.php"); 
+		}
+		?>
         
         <?php include("includes/breadcumps.php"); ?>
         
@@ -77,16 +74,12 @@ $MasterPage = new MasterPage();
 			<a id="scroll"></a> Áreas de Atuação
 		</div>
 
-
 		<div class="conteudo">
         
         <?php include("includes/menulateralareadeatuacao.php"); ?>
-        
-        
+                
         <?php include("includes/detalhe_produto.php"); ?>
-        
-       
-                   
+         
         </div><?php //fim DIV CONTEUDO ?>
         	
         <div class="clear" style="height: 55px;"></div>

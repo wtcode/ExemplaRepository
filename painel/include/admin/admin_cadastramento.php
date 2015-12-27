@@ -5,11 +5,17 @@
 		include "include/grid/grid_parceiros.php";
 	} else if($_GET['cad'] == 3) {
 		include "include/grid/grid_funcionarios.php";
-	} else if($_GET['nf'] == 1) {
+	} else if(isset($_GET['nf']) == 1) {
 		//cadastra funcionario
 		include "include/form/form_funcionario.php";
 	} else if($_GET['cad'] == 4) {
 		//cadastra portifolio
 		include "include/grid/grid_portifolio.php";
+	} else if($_GET['cad'] == 5) {
+		//lista area de atuação
+		include "include/grid/grid_areadeatuacao.php";
+	} else if($_GET['cad'] == 6) {
+		//formulario area de atuação
+		include "include/form/form_areadeatuacao.php";
 	}
 ?>
