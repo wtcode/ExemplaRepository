@@ -7,7 +7,7 @@ include("conect.php");
 
 Class MasterPage{
 	
-	private $nomeEmpresa, $cnpjEmpresa, $telefoneEmpresa, $ruaEmpresa, $bairroEmpresa, $cidadeEmpresa, $ufEmpresa, $cepEmpresa, $emailEmpresa, $urlPadraoEmpresa;
+	private $nomeEmpresa, $cnpjEmpresa, $telefoneEmpresa, $ruaEmpresa, $bairroEmpresa, $cidadeEmpresa, $ufEmpresa, $cepEmpresa, $emailEmpresa, $urlPadraoEmpresa, $facebook, $instagran, $linkedin;
 	
 	function __construct(){
 		
@@ -26,6 +26,9 @@ Class MasterPage{
 			else if($linha["nmparametro"] == "telefone_empresa"){ $this->telefoneEmpresa = $linha["valorparametro"];}
 			else if($linha["nmparametro"] == "emailpadrao_empresa"){ $this->emailEmpresa = $linha["valorparametro"];}
 			else if($linha["nmparametro"] == "urlpadrao_empresa"){ $this->urlPadraoEmpresa = $linha["valorparametro"];}
+			else if($linha["nmparametro"] == "facebook"){ $this->facebook = $linha["valorparametro"];}
+			else if($linha["nmparametro"] == "instagran"){ $this->instagran = $linha["valorparametro"];}
+			else if($linha["nmparametro"] == "linkedin"){ $this->linkedin = $linha["valorparametro"];}
 		
 		}//fim while
 				
@@ -105,6 +108,30 @@ Class MasterPage{
 		return $this->urlPadraoEmpresa;
 		}
 		
+		//facebook
+		public function setFacebook($facebook){
+			$this->facebook = $facebook;
+		}
+		public function getFacebook(){
+			return $this->facebook;
+		}
+		
+		//instagran
+		public function setInstagran($instagran){
+			$this->instagran = $instagran;
+		}
+		public function getInstagran(){
+			return $this->instagran;
+		}
+		
+		//linkedin
+		public function setLinkedin($linkedin){
+			$this->linkedin = $linkedin;
+		}
+		public function getLinkedin(){
+			return $this->linkedin;
+		}
+		
 		
 		
 	public function VerificaBanners(){
@@ -129,4 +156,3 @@ Class MasterPage{
 	//$_SESSION["obj"] = $MasterPage;
 	
 	?>
-	

@@ -6,10 +6,10 @@
                 
                 
                 <div class="contato">
-                    <a href="https://www.facebook.com/exemplaeng" target="_blank"> <img src="imagens/facebook.png" style="margin-left:12px;" /> </a>
+                    <a href="<?php echo $MasterPage->getFacebook(); ?>" target="_blank"> <img src="imagens/facebook.png" style="margin-left:12px;" /> </a>
                     <!--<a href="#"> <img src="../imagens/twiter.png" style="margin-left:12px;"/> </a>-->
                     <!--<a href="#"> <img src="../imagens/youtube.png" style="margin-left:7px;"/> </a>-->
-                    <a href="https://www.linkedin.com/company/exempla-solu%C3%A7%C3%B5es-em-engenharia-de-seguran%C3%A7a?trkInfo=tarId%3A1409771365143%2Ctas%3AExempla+So%2Cidx%3A2-1-2&trk=tyah" target="_blank" > <img src="imagens/linkedin.png" style="margin-left:7px;" /> </a>
+                    <a href="<?php echo $MasterPage->getLinkedin()?>" target="_blank" > <img src="imagens/linkedin.png" style="margin-left:7px;" /> </a>
                     
                  </div>
            

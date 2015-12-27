@@ -80,6 +80,11 @@
 
         </div>
 
+         <?php 
+		//echo "facebook " . $MasterPage->getFacebook();
+        if($MasterPage->getFacebook() != ""){
+        ?>
+        
         <div style="width:33.3%; float:left">
 
             <div style="width:100%; float:left; font-size:20px; background-image:url(../imagens/separatituloradope.png); background-position:0px bottom; background-repeat:no-repeat;">
@@ -100,7 +105,7 @@
                                     fjs.parentNode.insertBefore(js, fjs);
                                 }(document, 'script', 'facebook-jssdk'));</script>
 
-                            <div class="fb-like-box" data-href="https://www.facebook.com/exemplaeng" data-width="350" data-height="180" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+                            <div class="fb-like-box" data-href="<?php echo $MasterPage->getFacebook(); ?>" data-width="350" data-height="180" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
 
                         </td>
                     </tr>
@@ -110,6 +115,9 @@
 
         </div>
 
+        <?php 
+        }//fim if $MasterPage->getFacebook() != ""
+        ?>
     </div>
 </div><?php //fim div MENU RODAPE ?>
 

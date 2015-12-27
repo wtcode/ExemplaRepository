@@ -2,7 +2,7 @@
 	include "../conect.php";
 	
 	
-	//variáveis referente a dados da empresa
+	//variÃ¡veis referente a dados da empresa
 	$nomeEmpresa = $_POST['nomeEmpresa'];
     $cnpjEmpresa = $_POST['cnpjEmpresa'];
 	$telefoneEmpresa = $_POST['telefoneEmpresa'];
@@ -15,10 +15,15 @@
 	$emailEmpresa = $_POST['emailEmpresa'];
 	$senhaEmailEmpresa = $_POST['senhaEmailEmpresa'];
 	
-	//variáveis referente a layout	
+	//variÃ¡veis referente a layout	
 	$larguraLogo = $_POST['larguraImgLogo'];
 	$alturaLogo = $_POST['alturaImgLogo'];
 	$cordefundo = $_POST['corDeFundo'];
+	
+	//variáveis referentes as redes sociais
+	$cFacebook = $_POST['facebook'];
+	$cInstagran = $_POST['instagran'];
+	$cLinkedin = $_POST['linkedin'];
 	
 	$sqlUpdate = "UPDATE parametrizacao SET valorparametro =  '$nomeEmpresa' WHERE  nmparametro = 'nome_empresa'";
 	$resultUpdateConteudo = mysql_query($sqlUpdate,$conect);
@@ -61,6 +66,16 @@
 	
 	$sqlUpdate = "UPDATE parametrizacao SET valorparametro =  '$cordefundo' WHERE  nmparametro = 'cordefundo_layout'";
 	$resultUpdateConteudo = mysql_query($sqlUpdate,$conect);
+	
+	$sqlUpdate = "UPDATE parametrizacao SET valorparametro =  '$cFacebook' WHERE  nmparametro = 'facebook'";
+	$resultUpdateConteudo = mysql_query($sqlUpdate,$conect);
+	
+	$sqlUpdate = "UPDATE parametrizacao SET valorparametro =  '$cInstagran' WHERE  nmparametro = 'instagran'";
+	$resultUpdateConteudo = mysql_query($sqlUpdate,$conect);
+	
+	$sqlUpdate = "UPDATE parametrizacao SET valorparametro =  '$cLinkedin' WHERE  nmparametro = 'linkedin'";
+	$resultUpdateConteudo = mysql_query($sqlUpdate,$conect);
+	
 	
 	
 	
