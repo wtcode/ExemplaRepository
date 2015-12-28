@@ -70,7 +70,7 @@ if (isset($_GET['pg'])){
 					1: {
 						label		: 'sim',
 						tipo		: 'link',
-						endereco	: 'controle/delete/delete_link.php?id='+codigo
+						endereco	: 'controle/delete/delete_areadeatuacao.php?id='+codigo
 					},
 					2: {
 						label		: 'n&atilde;o',

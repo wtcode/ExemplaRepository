@@ -17,6 +17,7 @@ if (isset ( $_GET ['idconteudo'] )) {
 	$titulo = "";
 	$conteudo = "";
 	$patch = "";
+	$idconteudo = "";
 	$titulo_form = "Inserir Área de Atuação";
 }
 
@@ -36,21 +37,29 @@ if (isset ( $_GET ['idconteudo'] )) {
 		<tr>
 			<th>Título</th>
 			<td>
-				<input type="text" name="nome" class="input" size="50"	value="<?php echo $titulo; ?>"> 
+				<input type="text" name="titulo" class="input" size="50"	value="<?php echo $titulo; ?>">
 				<input type="hidden" name="idconteudo" value="<?php echo $idconteudo ?>"> 
 				<input type="hidden" name="patch" value="<?php echo $patch ?>">
 			</td>
 		</tr>
 		<tr>
 			<th>Imagem</th>
-			<td><input type="file" name="imagem1" id="imagem1" class="input"> <input
-				type="hidden" name="acao" value="imagem"> <br>
+			
+			<td>
+				<?php
+					if ($patch == null) {
+				?>
+				<input type="file" name="imagem1" id="imagem1" class="input"> 
+				<input type="hidden" name="acao" value="imagem"> <br>
+				<?php
+					}
+				?>				
 				<?php
 					if ($titulo_form == "Editar Área de Atuação" && $patch != null) {
 				?>  	
 				<div id='thumb_image'>
-					<img src="../imagens/links/<?php echo $patch ?>"> <br> <a
-						href='controle/delete/delete_imagem_conteudo.php?id=<?php echo $idconteudo ?>'>Excluir</a>
+					<img src="../imagens/<?php echo $patch ?>"> <br> <a
+						href='controle/delete/delete_imagem_areadeatuacao.php?id=<?php echo $idconteudo ?>'>Excluir</a>
 				</div>"</td>
 			<?php  } ?>
 		</tr>

@@ -9,7 +9,7 @@
 			$titulo = $linhaForm['titulo'];
 			$descricao = $linhaForm['descricao'];
 			if($idForm != ""){
-				$envia = "controle/update/edita_conteudo.php";
+				$envia = "controle/update/edita_areadeatuacao.php";
 			}else{
 				$envia = "controle/insert/insert_conteudo.php";	
 			}
