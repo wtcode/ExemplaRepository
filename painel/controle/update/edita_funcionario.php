@@ -14,6 +14,7 @@
 	$bairro 		 = $_POST['bairro'];
 	$cidade  		 = $_POST['cidade'];
 	$estado  		 = $_POST['estado'];
+	$cep 			 = $_POST['cep'];
 	
 	//Redes sociais
 	$txtFacebook		 = $_POST['txtFacebook'];
@@ -23,7 +24,7 @@
 	
 	$sqlUpdateConteudo = "update cadastro set nome = '$nome', 
 							cpf = '$cpf', cnpj = '$cnpj', email = '$email', 
-							telefone = '$telefone', tipo = 'T', rua = '$rua', numero = '$numero', complemento = '$complemento', bairro = '$bairro',
+							telefone = '$telefone', tipo = 'T',cep = '$cep', rua = '$rua', numero = '$numero', complemento = '$complemento', bairro = '$bairro',
 							cidade = '$cidade', estado = '$estado', descricao = '$descricao'
 							where cdcadastro = '$cdcadastro'";
 		
@@ -37,6 +38,8 @@
 								linkedin = '$txtLinkedIn', 
 								instagran = '$txtInstagran' 
 								WHERE cdcadastro = '$cdcadastro'; ";
+								
+	//echo $sqlUpdatetRedeSocial;
 							
 	$resultUpdateRedeSocial = mysql_query($sqlUpdatetRedeSocial,$conect);
 	
@@ -47,6 +50,6 @@
 	include "../upload/fotos_funcionario.php";	
 	
 	echo "<script>
-			location.href = '../../cadastramento.php?cad=3'
+			location.href = '../../cadastramento.php?cad=3';
 		  </script>";
 ?>

@@ -14,6 +14,8 @@
 	$bairro 		 = $_POST['bairro'];
 	$cidade  		 = $_POST['cidade'];
 	$estado  		 = $_POST['estado'];
+	$cep 			 = $_POST['cep'];
+	
 	//Redes sociais
 	$txtFacebook		 = $_POST['txtFacebook'];
 	$txtLinkedIn		 = $_POST['txtLinkedIn'];
@@ -33,7 +35,9 @@
 												bairro, 
 												cidade, 
 												estado, 
-												tipo) 
+												tipo,
+												cep,
+												obs) 
 							            values ('$nome', 
 										        '$descricao', 
 												'$cpf', 
@@ -46,7 +50,9 @@
 												'$bairro', 
 												'$cidade', 
 												'$estado',
-												'T')";
+												'T',
+												'$cep',
+												'')";
 							
 	//echo $sqlInsertConteudo;
 							
@@ -71,6 +77,6 @@
 	include "../upload/fotos_funcionario.php";	
 	
 	echo "<script>
-			location.href = '../../cadastramento.php?cad=3'
+				location.href = '../../cadastramento.php?cad=3';
 		  </script>";
 ?>

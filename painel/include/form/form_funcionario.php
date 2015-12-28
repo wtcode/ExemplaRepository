@@ -19,6 +19,7 @@
 		$cidade = $linhaForm['cidade'];
 		$estado = $linhaForm['estado'];
 		$numero = $linhaForm['numero'];
+		$cep = $linhaForm['cep'];
 		
 		//redes sociais.
 		$sqlFormRede = "select * from cadastro_redesocial where cdcadastro = '$cdcadastro'";	
@@ -33,10 +34,10 @@
 		$txtTwiter		 	 = $linhaFormRede['twiter'];
 		$txtInstagran		 = $linhaFormRede['instagran'];
 		
-		$chkFacbe = ""; 
-		$chkLinkedIn = ""; 
-		$chkTwiter = ""; 
-		$chkInstagran = "";
+		$chkFacbe 		= ""; 
+		$chkLinkedIn 	= ""; 
+		$chkTwiter		= ""; 
+		$chkInstagran 	= "";
 		
 		if(trim($txtFacebook) != ""){
 			$chkFacbe = "checked='checked'";
@@ -57,38 +58,101 @@
 		$envia = "controle/update/edita_funcionario.php";
 		
 	}else{
+		
+		$cdcadastro     = "";
+		$nome 			= "";
+		$descricao  	= "";
+		$cpf 			= "";
+		$cnpj 			= "";
+		$email 			= "";
+		$telefone 		= "";
+		$rua 			= "";
+		$complemento 	= "";
+		$bairro 		= "";
+		$cidade 		= "";
+		$estado 		= "";
+		$numero 		= "";
+		$cep 			= "";
+		
+		$txtFacebook		 = "";
+		$txtLinkedIn		 = "";
+		$txtTwiter		 	 = "";
+		$txtInstagran		 = "";
+		
+		$chkFacbe = ""; 
+		$chkLinkedIn = ""; 
+		$chkTwiter = ""; 
+		$chkInstagran = "";
+		
+		
+		
 		$envia = "controle/insert/insert_funcionario.php";	
 		$sub_categoria_titulo = "Selecione uma categoria";
 		$sub_categoria = 0;
 	}
 	$titulo_form = "Inserir Funcionário";
 ?>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function () {
+	    $('#cep').blur(function () {
+		    debugger;
+	        $.ajax({
+	            url: 'http://cep.republicavirtual.com.br/web_cep.php',
+	            type: 'GET',
+	            data: 'cep=' + String($('#cep').val()).replace("-", "") + '&formato=json',
+	            dataType: 'json',
+	            success: function (data) {
+	                if (data.resultado == "1") {
+	                    $('#estado').val(data.uf);
+	                    $('#cidade').val(data.cidade);
+	                    $('#rua').val(data.tipo_logradouro + ' ' + data.logradouro);
+	                    $('#bairro').val(data.bairro);
+	                }
+	            }
+	        });
+	        return false;
+	    })
+	});
+
+	$('.cep').mask('00000-000');
+	$('.telefone').mask('000 0000-0000');
+	$('.cnpj').mask('00.000.000/0000-00');
+	$('.cpf').mask('000.000.000-00');	
+	$('.numero').mask('0000');
+	
+	
+</script>
+
 <form action="<?php echo $envia ?>" method="post" enctype="multipart/form-data">
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabela_form">
 
     <tr>
-        <td colspan="2" class="titulo" align="center"><?php echo $titulo_form ?></td>
+        <td colspan="2" class="titulo" align="center"><?php echo $titulo_form; ?></td>
     </tr>
 
   <tr>
     <th width="20%">Nome</th>
     <td width="80%">
         <input type="text" name="nome" id="nome" class="input" size="59" value="<?php echo $nome; ?>">
-        <input type="hidden" name="cdcadastro" id="cdcadastro" value="<?php echo $cdcadastro ?>" >
+        <input type="hidden" name="cdcadastro" id="cdcadastro" value="<?php echo $cdcadastro; ?>" >
     </td>
   </tr>
   
   <tr>
     <th width="20%">CPF</th>
     <td width="80%">
-        <input type="text" name="cpf" id="cpf" class="input" size="59" value="<?php echo $cpf; ?>">
+        <input type="text" name="cpf" id="cpf" class="input cpf" size="59" value="<?php echo $cpf; ?>">
     </td>
   </tr>
   
   <tr>
     <th width="20%">CNPJ</th>
     <td width="80%">
-        <input type="text" name="cnpj" id="cnpj" class="input" size="59" value="<?php echo $cnpj; ?>">
+        <input type="text" name="cnpj" id="cnpj" class="input cnpj" size="59" value="<?php echo $cnpj; ?>">
     </td>
   </tr>
   
@@ -102,7 +166,14 @@
   <tr>
     <th width="20%">Telefone</th>
     <td width="80%">
-        <input type="text" name="telefone" id="telefone" class="input" size="59" style="width:170px;" value="<?php echo $telefone; ?>">
+        <input type="text" name="telefone" id="telefone" class="input telefone" size="59" style="width:170px;" value="<?php echo $telefone; ?>">
+    </td>
+  </tr>
+  
+  <tr>
+    <th width="20%">Cep</th>
+    <td width="80%">
+        <input type="text" name="cep" id="cep" class="input cep" size="59" style="width:170px;" value="<?php echo $cep; ?>">
     </td>
   </tr>
   
@@ -111,7 +182,7 @@
     <td width="80%">
         <input type="text" name="rua" id="rua" class="input" size="59" style="width:270px;" value="<?php echo $rua; ?>">
         &nbsp;&nbsp;
-        Numero <input type="text" name="numero" id="numero" class="input" size="59" style="width:38px;" value="<?php echo $numero; ?>">
+        Numero <input type="text" name="numero" id="numero" class="input numero" size="59" style="width:38px;" value="<?php echo $numero; ?>">
     </td>
   </tr>
   
@@ -145,7 +216,7 @@
         	<tr>
             	<td style="vertical-align:middle;">
                 	<input type="checkbox" id="Facebook" <?php echo "$chkFacbe"; ?> value="Facebook" onclick="AbreCampos('Facebook');"/>Facebook
-                    <input type="text" class="input" id="txtFacebook" name="txtFacebook" value="<?php echo "$txtFacebook"; ?>" style="display:none;" />
+                    <input type="text" class="input" id="txtFacebook" name="txtFacebook" value="<?php echo $txtFacebook; ?>" style="display:none;" />
                 </td>
             </tr>
             <tr>
