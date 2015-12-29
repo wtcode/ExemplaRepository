@@ -21,7 +21,7 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 
 		$handle = new upload($file);
 
-		// Então verificamos se o arquivo foi carregado corretamente
+		// Entï¿½o verificamos se o arquivo foi carregado corretamente
 
 		if ($handle->uploaded) {   
 
@@ -29,7 +29,7 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 			
 			$nomeGrande = $nomeFoto;    
 
-			// Definimos as configurações desejadas da imagem maior
+			// Definimos as configuraï¿½ï¿½es desejadas da imagem maior
 
 			$handle->file_new_name_body		 = $nomeGrande;
 
@@ -43,12 +43,14 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 
 			$handle->image_ratio             = true;
 			
+			$handle->image_convert         = 'png';
+			
 
-			// Definimos a pasta para onde a imagem maior será armazenada
+			// Definimos a pasta para onde a imagem maior serï¿½ armazenada
 
 			$handle->process('../../../imagens/');
 
-			// Em caso de sucesso no upload podemos fazer outras ações como insert em um banco de cados
+			// Em caso de sucesso no upload podemos fazer outras aï¿½ï¿½es como insert em um banco de cados
 
 			if ($handle->processed) {
 
@@ -80,7 +82,7 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 
 			$nomeThumb = "thumb_".$nomeGrande;
 
-			// Aqui nos devifimos nossas configurações de imagem do thumbs			
+			// Aqui nos devifimos nossas configuraï¿½ï¿½es de imagem do thumbs			
 
 			$handle->image_resize            = true;						
 
@@ -92,11 +94,13 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 
 			$handle->file_max_size			 = $tamanhoMaximo;
 
-			// colocar TRUE pra manter a proporção da imagem original - by Rande A. Moreira
+			// colocar TRUE pra manter a proporï¿½ï¿½o da imagem original - by Rande A. Moreira
 
 			$handle->image_ratio             = true;
+			
+			$handle->image_convert         = 'png';
 
-			// Definimos a pasta para onde a imagem thumbs será armazenada
+			// Definimos a pasta para onde a imagem thumbs serï¿½ armazenada
 
 			$handle->process('../../../imagens/miniaturas/');
 
