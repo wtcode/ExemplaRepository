@@ -78,7 +78,7 @@ $MasterPage = new MasterPage();
         
         <?php include("includes/menulateralareadeatuacao.php"); ?>
                 
-        <?php include("includes/detalhe_produto.php"); ?>
+        <?php include("includes/detalhe_areadeatuacao.php"); ?>
          
         </div><?php //fim DIV CONTEUDO ?>
         	

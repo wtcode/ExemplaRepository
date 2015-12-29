@@ -1,6 +1,9 @@
 <?php	
 	include("conect.php");					
-	$sql = "SELECT * FROM produtos where idcategoria = 11 and idhabilitado=1";
+	$sql = "SELECT * 
+			FROM conteudo obj, pagina obj2
+			where obj.idpagina = obj2.idpagina 
+			and obj2.nome='areas_de_atuacao'";
 	$result = mysql_query($sql);
 		
 ?>
@@ -12,7 +15,7 @@
             ?>
 	              <tr>
 	                <td colspan="2" class="tituloMenu">
-	                	<a href="areadeatuacao.php?prd=<?php echo $linha['idprodutos'] ?>"><?php echo utf8_encode($linha['titulo']) ?></a>
+	                	<a href="areadeatuacao.php?prd=<?php echo $linha['idconteudo'] ?>"><?php echo utf8_encode($linha['titulo']) ?></a>
 	               	</td>
 	              </tr>
             <?php
