@@ -2,10 +2,10 @@
 			$style = " style='margin-top:20px;'"; 
 			$i = 1;
 			
-			$sql = "SELECT * FROM produtos p 
-					LEFT JOIN imagem_produto i ON p.idprodutos = i.idprodutos
-					WHERE p.idhabilitado = '1' and 
-					p.idcategoria = '11'";
+			$sql = "SELECT * FROM 
+					conteudo obj, pagina obj2
+					where obj.idpagina = obj2.idpagina
+					and obj2.nome = 'areas_de_atuacao'";
 				
 			$result = mysql_query($sql);
 			
@@ -22,7 +22,7 @@
 			
 			?>
             
-            <a href="areadeatuacao.php?prd=<?php echo $linha["idprodutos"]; ?>" style="font-weight:normal;">
+            <a href="areadeatuacao.php?prd=<?php echo $linha["idconteudo"]; ?>" style="font-weight:normal;">
             
            	 <div class="produto" <?php echo $style; ?>>
             
@@ -41,7 +41,7 @@
                <div class="divFotoProduto" style="position:relative;">
                		
                   <div style="float:left; width:100%;">
-                     <img onerror="this.onerror=null;this.src='imagens/sem_imagem_prd.jpg';" src="imagens/miniaturas/thumb_<?php echo $linha["patch"]; ?>" />
+                     <img onerror="this.onerror=null;this.src='imagens/sem_imagem_prd.jpg';" src="imagens/<?php echo $linha["patch"]; ?>" />
                   </div>
                     
                     <div style="position:absolute; float:right; background-image:url(imagens/bttplus.png); height:40px; width:40px; background-repeat:no-repeat; margin-top:129px; margin-left:235px;">
@@ -50,7 +50,7 @@
                </div><?php //fim DIV FOTO PRODUTO ?>     
                
                <div class="nomeProduto" style="text-align:justify;">
-               		<?php echo substr(strip_tags($linha["descricao"]),0,176) . "<span style=\"color:#1E7B46;\"> ... Leia mais [+]</span>"; ?>
+               		<?php echo substr(strip_tags($linha["conteudo"]),0,176) . "<span style=\"color:#1E7B46;\"> ... Leia mais [+]</span>"; ?>
                </div>
                
             </div><?php //fim DIV PRODUTO ?>
