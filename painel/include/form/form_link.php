@@ -46,10 +46,13 @@ if (isset ( $_GET ['lnk'] )) {
 		<tr>
 			<th>Imagem</th>
 			<td>
+				<?php
+					if ($patch == null) {
+				?>
 				<input type="file" name="imagem1" id="imagem1" class="input"> 
 				<input type="hidden" name="acao" value="imagem"> <br>
 				<?php
-					if ($titulo_form == "Editar Link" && $patch != null) {
+					}if ($titulo_form == "Editar Link" && $patch != null) {
 				?>  	
 				<div id='thumb_image'>
 					<img src="../imagens/links/<?php echo $patch ?>"> <br> <a

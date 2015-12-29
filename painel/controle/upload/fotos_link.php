@@ -63,7 +63,7 @@ function realizaUploadImagem($file, $tamanhoMaximo, $titulo) {
 
 									 "</div></div>";
 
-				echo "<script> document.location.href='cadastraFoto.php' </script>";
+				echo "<script> location.href = '../../link.php?id=1' </script>";
 
 				die ();
 

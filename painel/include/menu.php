@@ -24,12 +24,7 @@ $result = mysql_query($sql);
                     </ul>
                 </li>
                 
-                <li><a href="#"><b>Àrea de Atuação</b></a>
-                    <ul>
-                        <li><a href="#">&nbsp;&nbsp;&nbsp;Àrea</a></li>
-                        <li><a href="#">&nbsp;&nbsp;&nbsp;Conteúdo</a></li>
-                    </ul>
-                </li>
+                <li><a href="cadastramento.php?cad=5"><b>Àrea de Atuação</b></a></li>
                 
                 <li><a href="portifolio.php?id=1"><b>Portifólio</b></a></li>
                 

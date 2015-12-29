@@ -191,7 +191,13 @@
                         </td>
                     </tr>
                  </table>-->
+                 <?php 
+                 	include("include/conect.php");
+                 	
+                 	
                  
+                 
+                 ?>
                              <!--COMEÇO CARROSEL-->
                              <div id="wrap" style="height:80px; margin-top:17px;">
                                     <ul id="mycarousel" class="jcarousel-skin-tango" style="height: 65px; line-height: 65px; vertical-align: middle;">
