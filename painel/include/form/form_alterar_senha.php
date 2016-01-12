@@ -7,11 +7,18 @@
 
 <div>
     <?php 
-        if (isset($_GET['msg']) and $_GET['msg'] = 1) {
-            echo "<span style='color:red; font-family: Arial;'>Senha alterada com sucesso!</span>";
-        } else
-        if (isset($_GET['msg']) and $_GET['msg'] = 2) {
-            echo "Senha inválida!";
+        if (isset($_GET['msg'])) {
+        	
+        	if($_GET['msg'] == "1"){
+
+        		echo "<span style='color:blue; font-family: Arial;'>Senha alterada com sucesso!</span>";
+
+        	}else if($_GET['msg'] == "2"){
+        		
+        		echo "<span style='color:red; font-family: Arial;'>Senha inválida!</span>";
+        	}
+        	
+        	
         }
     ?>
 </div>
@@ -21,7 +28,7 @@
                     #FFF; margin:0px 0px 0px 0px;">
 
         <div style="width:30%; height:250px; padding-left:10px; padding-top:10px; float:left; margin:0px 0px 0px 15px;">
-            <form action="alterar_senha_adim.php" id="form_alterar" name="form_alterar" method="post" enctype="multipart/form-data">
+            <form action="../painel/include/grid/alterar_senha_adim.php" id="form_alterar" name="form_alterar" method="post" enctype="multipart/form-data">
                 Login:<br /> <input class="input" name="login" id="login" style="width:195px;" value="<?php echo $Usuario; ?>" /><br />
                 Senha atual:<br /> <input type="password" class="input" name="senha" id="senha" style="width:195px;" /><br />
                 Nova Senha:<br /> <input type="password" class="input" name="newsenha" id="senha" style="width:195px;"/><br />
