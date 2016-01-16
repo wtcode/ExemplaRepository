@@ -8,7 +8,7 @@
         <th>Arquivo:</th>
         <td>
         <input type="file" name="file[]" class="input">
-        <br />O tamanho sugerido para o Banner é 1000px X 325px
+        <br /><i>O tamanho sugerido para o Banner Ã© 1000px X 325px</i>
         </td>
     </tr>
 	<tr>
@@ -24,7 +24,6 @@
         <td>
         	
             <select name="estatus" class="input">
-                <option></option>
                 <option value="1">Inativo</option>
                 <option value="2">Ativo</option>
             </select>
@@ -32,7 +31,7 @@
     </tr>
     <tr>
         <td colspan="2" align="center">
-          <input type="submit" name="submit" value="Enviar" class="submit">
+          <input type="submit" name="submit" value="Inserir" class="submit">
         </td>
     </tr>
 </table>  

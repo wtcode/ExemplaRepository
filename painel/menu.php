@@ -15,7 +15,7 @@
 			<a href="#">Conte&uacute;do</a>
 			<ul>
 				<li><a href="conteudo.php?id=1">Empresa</a></li>
-                <li><a href="conteudo.php?id=4">Área de Entrega</a></li>
+                <li><a href="conteudo.php?id=4">Ãrea de Entrega</a></li>
                 <li><a href="conteudo.php?id=5">Clientes e Parceiros</a></li>
 			</ul>
 		</li>
@@ -40,7 +40,7 @@
          <li>
 			<a href="#">Frete</a>
 			<ul>
-                <li><a href="frete.php">Gestão de bairros</a></li>
+                <li><a href="frete.php">GestÃ£o de bairros</a></li>
 			</ul>
 		</li>
         <?php  }
@@ -59,10 +59,10 @@
 			<ul>
 				<li><a href="cadastramento.php?cad=1">Listar Clientes</a></li>
 				<li><a href="cadastramento.php?cad=2">Parceiros</a></li>
-				<li><a href="cadastramento.php?cad=3">Funcionários</a></li>
+				<li><a href="cadastramento.php?cad=3">FuncionÃ¡rios</a></li>
                 <li><a style="background-image:url(http://exempla.com.br/painel/images/setamenu.png); background-position:center right; background-repeat:no-repeat;" href="#" 
                 onmousemove="subMenuNoticias.style.display='';"
-                onmouseout="subMenuNoticias.style.display='none';">Notícias</a></li>
+                onmouseout="subMenuNoticias.style.display='none';">NotÃ­cias</a></li>
 			</ul>
 		</li>
         <div class="subMenuNoticias" id="subMenuNoticias" style="width:200px; display:none;position:absolute;margin-top:-28px;margin-left:180px;" onmouseover="this.style.display='';" onmouseout="this.style.display='none';">
@@ -74,7 +74,7 @@
                 <td> <a href="produtos.php?id=2">Sub-Categoria</a></td>
               </tr>
               <tr>
-                <td><a href="produtos.php?id=3">Notícias</a></td>
+                <td><a href="produtos.php?id=3">Notï¿½cias</a></td>
               </tr>
             </table>
         </div>
@@ -84,7 +84,7 @@
 		?>
         <li>
         
-			<a href="#">Banner Home</a>
+			<a href="#">Banner Site</a>
 			<ul>
             	<li><a href="gestao_banner.php?id=1">Inserir Banner</a></li>
 				<li><a href="gestao_banner.php">Gerenciar Banners</a></li>

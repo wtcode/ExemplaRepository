@@ -119,7 +119,7 @@ if ($linha["ACESSO"] == 1 && $linha["IDMODULO"] == 5) {
     ?>
 
         <li>
-            <a href="#">Banner Home</a>
+            <a href="#">Banner Site</a>
             <ul>
                 <li><a href="gestao_banner.php?id=1">Inserir Banner</a></li>
                 <li><a href="gestao_banner.php">Gerenciar Banners</a></li>
