@@ -102,7 +102,7 @@
     <div style="font-family:Arial, Helvetica, sans-serif; width:98%; height:20px; padding-left:10px; padding-top:10px; float:left; text-align:center;">
         <?php
         if (isset($_GET['msg']) and $_GET['msg'] = 1) {
-            echo "<span style=\"font-family:Arial, Helvetica, sans-serif; color:red; font-size:12px;\">" .
+            echo "<span style=\"font-family:Arial, Helvetica, sans-serif; color:blue; font-size:12px;\">" .
             "Dados atualizados com sucesso!" .
             "</span>";
         }
@@ -234,14 +234,14 @@
                     <input type="hidden" name="acao" value="imagem">
                 </td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td class="form_right">
                     Cor de fundo:
                 </td>
                 <td>
                     <input class="input" type="text" style="width:88px;" name="corDeFundo" value="<?php echo $corDeFundo['valorparametro']; ?>"  /> (Hexadecimal)
                 </td>
-            </tr>
+            </tr> -->
         </table>       
     </div>
     

@@ -16,6 +16,7 @@
 <script src="js/jquery-1.2.1.min.js" type="text/javascript"></script>
 <script src="js/menu-collapsed.js" type="text/javascript"></script>
 <body>
+<?php include "include/validaBotoes.php" ?>
 <div id="pai">
 	<div id="topo">
     <?php include "include/topo.php" ?>

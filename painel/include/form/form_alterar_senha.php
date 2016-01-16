@@ -5,7 +5,7 @@
     $pagina = 1;
 ?>
 
-<div>
+<div style="width: 100%; text-align: center;">
     <?php 
         if (isset($_GET['msg'])) {
         	
@@ -15,7 +15,7 @@
 
         	}else if($_GET['msg'] == "2"){
         		
-        		echo "<span style='color:red; font-family: Arial;'>Senha inválida!</span>";
+        		echo "<span style='color:red; font-family: Arial;'>Dados incorretos!</span>";
         	}
         	
         	

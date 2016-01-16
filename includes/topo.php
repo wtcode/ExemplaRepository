@@ -6,11 +6,19 @@
                 
                 
                 <div class="contato">
+                    <?php if ($MasterPage->getFacebook() != ""){?>
                     <a href="<?php echo $MasterPage->getFacebook(); ?>" target="_blank"> <img src="imagens/facebook.png" style="margin-left:12px;" /> </a>
+                    <?php }?>
                     <!--<a href="#"> <img src="../imagens/twiter.png" style="margin-left:12px;"/> </a>-->
                     <!--<a href="#"> <img src="../imagens/youtube.png" style="margin-left:7px;"/> </a>-->
-                    <a href="<?php echo $MasterPage->getLinkedin()?>" target="_blank" > <img src="imagens/linkedin.png" style="margin-left:7px;" /> </a>
                     
+                    <?php if ($MasterPage->getInstagran() != ""){?>
+                    <a href="<?php echo $MasterPage->getInstagran()?>" target="_blank" > <img src="imagens/instagran.png" style="margin-left:7px;" /> </a>
+                    <?php }?>
+                    
+                    <?php if ($MasterPage->getLinkedin() != ""){?>
+                    <a href="<?php echo $MasterPage->getLinkedin()?>" target="_blank" > <img src="imagens/linkedin.png" style="margin-left:7px;" /> </a>
+                    <?php }?>
                  </div>
            
             </div><?php //fim DIV CABECALHO ?>

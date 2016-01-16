@@ -63,7 +63,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Área Reservada</title>
+<title>ï¿½rea Reservada</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 <link rel="stylesheet" type="text/css" href="css/menu.css"/>
@@ -126,7 +126,7 @@
                      Cidade: <input class="input" type="text" style="width:281px;" name="enderecoCidadeEmpresa" value="<?php echo $enderecoCidadeEmpresa['valorparametro']; ?>" /> UF: <input class="input" type="text" style="width:69px;" name="enderecoUFEmpresa" value="<?php echo $enderecoUFEmpresa['valorparametro']; ?>" /> <br />
                      CEP: <input class="input" type="text" style="width:79px;" name="enderecoCepEmpresa" value="<?php echo $enderecoCepEmpresa['valorparametro']; ?>" /> <br />
                      
-                     Horário de Funcionamento: <input class="input" type="text" style="width:271px;" name="horarioEmpresa" value="<?php echo $horarioEmpresa['valorparametro']; ?>"/> <br>            
+                     HorÃ¡rio de Funcionamento: <input class="input" type="text" style="width:271px;" name="horarioEmpresa" value="<?php echo $horarioEmpresa['valorparametro']; ?>"/> <br>            
                      E-mail Padr&atilde;o: <input class="input" type="text" style="width:339px;" name="emailEmpresa" value="<?php echo $emailEmpresa['valorparametro']; ?>"/> <br>  
                      Senha E-mail: <input class="input" type="text" style="width:343px;" name="senhaEmailEmpresa" value="<?php echo $senhaEmailEmpresa['valorparametro']; ?>" /> 
                       </div>
@@ -135,10 +135,10 @@
                     <div style=" font-family:Arial, Helvetica, sans-serif; width:98%; height:132px; padding-left:10px; padding-top:10px; float:left; border:3px solid 
                     #FFF; margin:0px 0px 0px 0px;">
                      <b>Imagem Miniatura:</b><br> 
-                     Largura: <input class="input" type="text" style="width:40px;" name="larguraImgMiniatura" value="<?php echo $img_miniatura_altura['valorparametro']; ?>"/> px (Somente números)
-                     Altura: <input class="input" type="text" style="width:40px;" name="alturaImgMiniatura" value="<?php echo $img_miniatura_largura['valorparametro']; ?>" /> px (Somente números)<br />
+                     Largura: <input class="input" type="text" style="width:40px;" name="larguraImgMiniatura" value="<?php echo $img_miniatura_altura['valorparametro']; ?>"/> px (Somente nï¿½meros)
+                     Altura: <input class="input" type="text" style="width:40px;" name="alturaImgMiniatura" value="<?php echo $img_miniatura_largura['valorparametro']; ?>" /> px (Somente nï¿½meros)<br />
                      Cor de fundo: <input class="input" type="text" style="width:88px;" name="corDeFundo" value="<?php echo $corDeFundo['valorparametro']; ?>"  /> (Hexadecimal)<br />
-                     Imagem de Fundo: <input class="input" type="file" name="imgDefundo" /> px (Somente números)               
+                     Imagem de Fundo: <input class="input" type="file" name="imgDefundo" /> px (Somente nï¿½meros)               
                       </div>
                       
                       
@@ -147,7 +147,7 @@
                     #FFF; margin:0px 0px 0px 0px;">
                      TOKEN  PagSeguro: <input class="input" type="text" style="width:320px;" name="tokenPagSeguro" value="<?php echo $tokenPagSeguro['valorparametro']; ?>" /><br />
                      Email PagSeguro: <input class="input" type="text" style="width:330px;" name="emailPagSeguro" value="<?php echo $emailPagSeguro['valorparametro']; ?>" /> <br />
-                     Desconto Pag Seguro (Promoção): <input class="input" type="text" style="width:40px;" name="descontoPagSeguro" value="<?php echo $descontoPagseguro['valorparametro']; ?>" /> %<br />
+                     Desconto Pag Seguro (Promoï¿½ï¿½o): <input class="input" type="text" style="width:40px;" name="descontoPagSeguro" value="<?php echo $descontoPagseguro['valorparametro']; ?>" /> %<br />
                       </div>
                 </form>
 
