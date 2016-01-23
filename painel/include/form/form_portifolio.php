@@ -26,19 +26,21 @@
   <tr>
     <th width="20%">Titulo</th>
     <td width="80%">
-        <input type="text" name="titulo" class="input" size="59" value="<?php echo $titulo; ?>">
+        <input type="text" name="titulo" class="input" size="67" value="<?php echo $titulo; ?>">
         <input type="hidden" name="id" value="<?php echo $id; ?>" >
     </td>
   </tr>
-  	<tr>
+  <tr>
   	<th>Decrição</th>
     <td>
-        <input type="text" name="conteudo" class="input" size="59" value="<?php echo $conteudo; ?>">
-    	
+		<textarea rows="4" cols="50" name="conteudo"><?php echo $conteudo; ?></textarea>    	
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="2"><input type="submit" value="Salvar" class="submit"></td>
+    <td align="center" colspan="2">
+    	<a href="portifolio.php?id=1"><input type="button" value="Voltar" class="submit"></a>
+    	<input type="submit" value="Salvar" class="submit">
+    </td>
   </tr>
 </table>
 </form>
