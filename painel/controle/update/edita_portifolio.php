@@ -3,13 +3,15 @@
 	$id = $_POST['id'];
 	$titulo = $_POST['titulo'];
 	$conteudo = $_POST['conteudo'];
+
+	echo $titulo;
+	echo $conteudo;
 	
-	
-	$sqlUpdateConteudo = "update conteudo set titulo = '$titulo', conteudo = '$conteudo' where idconteudo = '$id' ";
-	$resultUpdateConteudo = mysql_query($sqlUpdateConteudo,$conect);
+// 	$sqlUpdateConteudo = "update conteudo set titulo = '$titulo', conteudo = '$conteudo' where idconteudo = '$id' ";
+// 	$resultUpdateConteudo = mysql_query($sqlUpdateConteudo,$conect);
 
 
-	echo "<script>
-			location.href = '../../portifolio.php?id=1';
-		  </script>";
+// 	echo "<script>
+// 			location.href = '../../portifolio.php?id=1';
+// 		  </script>";
 ?>

@@ -5,7 +5,7 @@
 	$titulo = $_POST['titulo'];
 	$conteudo = $_POST['conteudo'];
 	$idpagina = 9;
-	
+
 	$sqlInsertConteudo = "insert into conteudo(idpagina, titulo, conteudo) values ($idpagina,'$titulo', '$conteudo')";
 	$resultInsertConteudo = mysql_query($sqlInsertConteudo,$conect);
 	

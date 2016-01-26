@@ -31,7 +31,7 @@
                     <table cellpadding="0" cellspacing="0" border="0">
                         <tr>
                             <td style="vertical-align:middle; height:44px;">
-                                <?php echo utf8_encode($linha["titulo"]); ?>
+                                <?php echo $linha["titulo"]; ?>
                             </td>	
                         </tr>
                     </table>

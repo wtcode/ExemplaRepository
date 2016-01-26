@@ -15,7 +15,7 @@
             ?>
 	              <tr>
 	                <td colspan="2" class="tituloMenu">
-	                	<a href="areadeatuacao.php?prd=<?php echo $linha['idconteudo'] ?>"><?php echo utf8_encode($linha['titulo']) ?></a>
+	                	<a href="areadeatuacao.php?prd=<?php echo $linha['idconteudo'] ?>"><?php echo $linha['titulo'] ?></a>
 	               	</td>
 	              </tr>
             <?php

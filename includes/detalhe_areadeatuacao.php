@@ -26,7 +26,7 @@
 		<table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
 			<tr>
 				<td	style="vertical-align: middle; padding-left: 23px; padding-bottom: 7px; padding-top: 7px;">
-                  	<?php  echo utf8_encode($linha['titulo']); ?>
+                  	<?php  echo $linha['titulo']; ?>
                 </td>
 			</tr>
 		</table>

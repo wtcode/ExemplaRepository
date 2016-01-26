@@ -24,7 +24,7 @@ $result = mysql_query($sql);
                     </ul>
                 </li>
                 
-                <li><a href="cadastramento.php?cad=5"><b>Àrea de Atuação</b></a></li>
+                <li><a href="cadastramento.php?cad=5"><b>Área de Atuação</b></a></li>
                 
                 <li><a href="portifolio.php?id=1"><b>Portifólio</b></a></li>
                 
