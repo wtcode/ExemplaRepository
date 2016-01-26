@@ -29,8 +29,7 @@
         <td width="8%" class="titulo_grid"></td>
         <td width="7%" class="titulo_grid"></td>
         <td width="9%" class="titulo_grid"></td>
-        <td width="5%" class="titulo_grid">&nbsp;</td>
-        <td width="7%" class="titulo_grid">&nbsp;</td>
+        <td width="13%" class="titulo_grid" colspan="2" style="text-align: center;">Ações</td>
     </tr>
 
     <?php
