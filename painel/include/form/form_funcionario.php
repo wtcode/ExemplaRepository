@@ -90,7 +90,7 @@
 		$sub_categoria_titulo = "Selecione uma categoria";
 		$sub_categoria = 0;
 	}
-	$titulo_form = "Inserir Funcion�rio";
+	$titulo_form = "Inserir Funcionário";
 ?>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
@@ -119,15 +119,40 @@
 	});
 
 	$('.cep').mask('00000-000');
-	$('.telefone').mask('000 0000-0000');
+	$('.telefone').mask('000 00000-0000');
 	$('.cnpj').mask('00.000.000/0000-00');
 	$('.cpf').mask('000.000.000-00');	
 	$('.numero').mask('0000');
+
+
+    function ValidaCampo(){
+        debugger;
+		var nome = document.getElementById("nome");
+		var descricao = FCKeditorAPI.GetInstance('descricao');
+
+		if (nome.value == ""){
+			alert("Preencha o campo nome!");
+			nome.focus();
+			return false;
+		}
+
+		if (descricao.GetHTML() == ""){
+			alert("Preencha o campo descrição!");
+			//descricao.focus();
+			return false;
+		}
+		
+		document.getElementById("formF").submit();
+	}
+
+	function Cancelar(){
+		window.location = "cadastramento.php?cad=3"
+	}
 	
 	
 </script>
 
-<form action="<?php echo $envia ?>" method="post" enctype="multipart/form-data">
+<form id="formF" action="<?php echo $envia ?>" method="post" enctype="multipart/form-data">
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabela_form">
 
     <tr>
@@ -214,25 +239,25 @@
     
     	<table cellpadding="0" cellspacing="0">
         	<tr>
-            	<td style="vertical-align:middle;">
+            	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="Facebook" <?php echo "$chkFacbe"; ?> value="Facebook" onclick="AbreCampos('Facebook');"/>Facebook
                     <input type="text" class="input" id="txtFacebook" name="txtFacebook" value="<?php echo $txtFacebook; ?>" style="display:none;" />
                 </td>
             </tr>
             <tr>
-            	<td style="vertical-align:middle;">
+            	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="LinkedIn" <?php echo "$chkLinkedIn"; ?> value="LinkedIn" onclick="AbreCampos('LinkedIn');"/>LinkedIn
                     <input type="text" class="input" id="txtLinkedIn" name="txtLinkedIn" value="<?php echo "$txtLinkedIn"; ?>" style="display:none;" />
                 </td>
             </tr>
             <tr>
-            	<td style="vertical-align:middle;">
+            	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="Twiter" value="Twiter" <?php echo "$chkTwiter"; ?> onclick="AbreCampos('Twiter');"/>Twiter
                     <input type="text" class="input" id="txtTwiter" name="txtTwiter" value="<?php echo "$txtTwiter"; ?>" style="display:none;"/>
                 </td>
             </tr>
             <tr>
-            	<td style="vertical-align:middle;">
+            	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="Instagran" <?php echo "$chkInstagran"; ?> value="Instagran" onclick="AbreCampos('Instagran');" />Instagran
                     <input type="text" class="input" id="txtInstagran" name="txtInstagran" value="<?php echo "$txtInstagran"; ?>" style="display:none;" />
                 </td>
@@ -262,9 +287,14 @@
     </td>
   </tr>
   <tr>
-  	<th>imagens</th>
+  	<th>Imagem</th>
     <td>
-        <input type="file" name="imagem1" id="imagem1" class="input">
+	    
+	    <div id="trImagem">
+		    <input type="file" name="imagem1" id="imagem1" class="input"><br>
+		    <span style="font-size: 10px;"><i>Tamanho sugerido: 195 x 195</i></span>
+	    </div>
+	    
         <input type="hidden" name="acao" value="imagem">
         <br>
         <?php
@@ -279,7 +309,11 @@
 						<img src='../imagens/miniaturas/thumb_$imagem'>
 					 	<br>
 						<a href='controle/delete/delete_imagem_funcionario.php?cdfoto=$cdfotocadastro&nf=1&func=$cdcadastro'>Excluir</a>
-					 </div>";
+					 </div>
+					  <script type='text/javascript'>
+							document.getElementById('trImagem').style.display = 'none';
+					  </script>
+				";
 				
 			}
 		}
@@ -304,7 +338,10 @@
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="2"><input type="submit" value="Salvar" class="submit"></td>
+    <td align="center" colspan="2">
+    	<input type="button" onclick="ValidaCampo();" value="Salvar" class="submit">
+    	<input type="button" onclick="Cancelar();" value="Cancelar" class="submit">
+    </td>
   </tr>
 </table>
 </form>

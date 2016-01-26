@@ -3,7 +3,8 @@ $sql = "SELECT c.nome, c.cdcadastro, fc.foto, c.descricao, cr.facebook,cr.instag
         FROM cadastro c 
         LEFT JOIN fotoscadastro fc ON c.cdcadastro = fc.cdcadastro 
         LEFT JOIN cadastro_redesocial cr ON c.cdcadastro = cr.cdcadastro
-        WHERE c.tipo = 'T'
+        WHERE c.tipo = 'T' 
+		GROUP BY c.cdcadastro
         ORDER BY c.ordem";
 $result = mysql_query($sql);
 
