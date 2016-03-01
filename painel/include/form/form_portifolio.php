@@ -33,7 +33,7 @@
   <tr>
   	<th>Decrição</th>
     <td>
-		<textarea rows="4" cols="50" name="conteudo"><?php echo $conteudo; ?></textarea>    	
+		<textarea rows="4" cols="50" name="conteudo" class="input" ><?php echo $conteudo; ?></textarea>    	
     </td>
   </tr>
   <tr>
