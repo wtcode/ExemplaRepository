@@ -26,9 +26,9 @@
     <td class="corpo_grid" style="text-align: center;">
 	<?php
 		if($linhaProdutos['estatus']  == 1){
-		 	echo  "<a href='controle/update/altera_estatus.php?id=$id_banner&est=2'><img src='images/estatusVermelho.png' title='Ativo'></a>"; 
+		 	echo  "<a href='controle/update/altera_estatus.php?id=$id_banner&est=2'><img src='images/estatusVermelho.png' title='Inativo'></a>"; 
 		} else if($linhaProdutos['estatus']  == 2){
-			echo  "<a href='controle/update/altera_estatus.php?id=$id_banner&est=1'><img src='images/estatusVerde.png' title='Inativo'></a>";
+			echo  "<a href='controle/update/altera_estatus.php?id=$id_banner&est=1'><img src='images/estatusVerde.png' title='Ativo'></a>";
 		}
 	?>
      </td>

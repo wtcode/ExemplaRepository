@@ -30,7 +30,7 @@ while ($linha = mysql_fetch_array($result)) {
             </div><?php //fim foto equipe ?>
 
             <div class="nomefunc">
-                <?php echo utf8_encode($linha["nome"]); ?>
+                <?php echo $linha["nome"]; ?>
             </div>
 
             <div class="descricaofunc">

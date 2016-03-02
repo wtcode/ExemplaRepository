@@ -339,8 +339,8 @@
   </tr>
   <tr>
     <td align="center" colspan="2">
+		<input type="button" onclick="Cancelar();" value="Cancelar" class="submit">
     	<input type="button" onclick="ValidaCampo();" value="Salvar" class="submit">
-    	<input type="button" onclick="Cancelar();" value="Cancelar" class="submit">
     </td>
   </tr>
 </table>
