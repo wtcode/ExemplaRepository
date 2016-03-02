@@ -23,7 +23,7 @@
   <tr>
     <th width="20%">Titulo</th>
     <td width="80%">
-        <input type="text" name="titulo" class="input" size="59" value="<?php echo $titulo; ?>">
+        <input type="text" name="titulo" class="input" size="59" readonly="true" value="<?php echo $titulo; ?>">
         <input type="hidden" name="id" value="<?php echo $id ?>" >
     </td>
   </tr>
