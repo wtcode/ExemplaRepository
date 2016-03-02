@@ -26,14 +26,14 @@
   <tr>
     <th width="20%">Titulo</th>
     <td width="80%">
-        <input type="text" name="titulo" class="input" size="67" value="<?php echo $titulo; ?>">
+        <input type="text" name="titulo" class="input" size="66" value="<?php echo $titulo; ?>">
         <input type="hidden" name="id" value="<?php echo $id; ?>" >
     </td>
   </tr>
   <tr>
   	<th>Decrição</th>
     <td>
-		<textarea rows="4" cols="50" name="conteudo" class="input" ><?php echo $conteudo; ?></textarea>    	
+		<textarea rows="4" cols="50" name="conteudo" class="input" maxlength="212"><?php echo $conteudo; ?></textarea>    	
     </td>
   </tr>
   <tr>
