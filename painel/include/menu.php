@@ -19,8 +19,8 @@ $result = mysql_query($sql);
                     <ul>
                         <li><a href="conteudo.php?id=1">&nbsp;&nbsp;&nbsp;Institucional</a></li>
                         <li><a href="conteudo.php?id=4">&nbsp;&nbsp;&nbsp;Missão e Visão</a></li>
-                        <li><a href="link.php?id=1&pg=6">&nbsp;&nbsp;&nbsp;Links</a></li>
                         <li><a href="cadastramento.php?cad=3">&nbsp;&nbsp;&nbsp;Equipe</a></li>
+                        <li><a href="link.php?id=1&pg=6">&nbsp;&nbsp;&nbsp;Links</a></li>
                     </ul>
                 </li>
                 

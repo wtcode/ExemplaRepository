@@ -111,7 +111,7 @@
             
             <div class="tituloPagina">
            
-                <?php echo utf8_encode($linha["titulo"]); ?>
+                <?php echo $linha["titulo"]; ?>
             </div>
              <?php include("includes/menulateralempresa.php"); ?>
             <div class="blocoTextoDetalhe" style="width:756px; float:right; margin-top:13px;">
