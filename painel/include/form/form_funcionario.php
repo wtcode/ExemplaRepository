@@ -126,7 +126,6 @@
 
 
     function ValidaCampo(){
-        debugger;
 		var nome = document.getElementById("nome");
 		var descricao = FCKeditorAPI.GetInstance('descricao');
 
@@ -138,7 +137,6 @@
 
 		if (descricao.GetHTML() == ""){
 			alert("Preencha o campo descrição!");
-			//descricao.focus();
 			return false;
 		}
 		
@@ -237,29 +235,29 @@
   <th width="20%">Redes Sociais</th>
     <td width="80%">
     
-    	<table cellpadding="0" cellspacing="0">
+    	<table cellpadding="0" cellspacing="0" style="width: 74%;">
         	<tr>
             	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="Facebook" <?php echo "$chkFacbe"; ?> value="Facebook" onclick="AbreCampos('Facebook');"/>Facebook
-                    <input type="text" class="input" id="txtFacebook" name="txtFacebook" value="<?php echo $txtFacebook; ?>" style="display:none;" />
+                    <input type="text" class="input" id="txtFacebook"  name="txtFacebook" value="<?php echo $txtFacebook; ?>" style="display:none; width: 100%;" />
                 </td>
             </tr>
             <tr>
             	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="LinkedIn" <?php echo "$chkLinkedIn"; ?> value="LinkedIn" onclick="AbreCampos('LinkedIn');"/>LinkedIn
-                    <input type="text" class="input" id="txtLinkedIn" name="txtLinkedIn" value="<?php echo "$txtLinkedIn"; ?>" style="display:none;" />
+                    <input type="text" class="input" id="txtLinkedIn" name="txtLinkedIn" value="<?php echo "$txtLinkedIn"; ?>" style="display:none; width: 100%;" />
                 </td>
             </tr>
             <tr>
             	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="Twiter" value="Twiter" <?php echo "$chkTwiter"; ?> onclick="AbreCampos('Twiter');"/>Twiter
-                    <input type="text" class="input" id="txtTwiter" name="txtTwiter" value="<?php echo "$txtTwiter"; ?>" style="display:none;"/>
+                    <input type="text" class="input" id="txtTwiter" name="txtTwiter" value="<?php echo "$txtTwiter"; ?>" style="display:none; width: 100%;"/>
                 </td>
             </tr>
             <tr>
             	<td style="vertical-align:middle; font-size: 13px;">
                 	<input type="checkbox" id="Instagran" <?php echo "$chkInstagran"; ?> value="Instagran" onclick="AbreCampos('Instagran');" />Instagran
-                    <input type="text" class="input" id="txtInstagran" name="txtInstagran" value="<?php echo "$txtInstagran"; ?>" style="display:none;" />
+                    <input type="text" class="input" id="txtInstagran" name="txtInstagran" value="<?php echo "$txtInstagran"; ?>" style="display:none; width: 100%;" />
                 </td>
             </tr>
  
@@ -268,22 +266,18 @@
         
         <script type="text/javascript">
 		function AbreCampos(campo){
-			//alert(campo);
-			if (document.getElementById(campo).checked == true){
-				document.getElementById("txt" + campo).style.display = "inherit";
-				}
-				else{document.getElementById("txt" + campo).style.display = "none";}
-			
+			if (document.getElementById(campo).checked == true)
+					document.getElementById("txt" + campo).style.display = "inherit";
+				else
+					document.getElementById("txt" + campo).style.display = "none";
 			}
-			
+		 
 			window.onload = 
 			AbreCampos("Facebook");
 			AbreCampos("Instagran");
 			AbreCampos("Twiter");
 			AbreCampos("LinkedIn");
-			
-			
-	</script>
+		</script>
     </td>
   </tr>
   <tr>
