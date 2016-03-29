@@ -268,8 +268,10 @@
 		function AbreCampos(campo){
 			if (document.getElementById(campo).checked == true)
 					document.getElementById("txt" + campo).style.display = "inherit";
-				else
+				else{
 					document.getElementById("txt" + campo).style.display = "none";
+					document.getElementById("txt" + campo).value = "";
+				}
 			}
 		 
 			window.onload = 
