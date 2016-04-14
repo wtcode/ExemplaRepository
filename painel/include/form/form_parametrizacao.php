@@ -193,58 +193,29 @@
                     <input class="input" type="text" style="width:385px;" name="emailEmpresa" value="<?php echo $emailEmpresa['valorparametro']; ?>"/>
                 </td>
             </tr>
-            <tr>
+            <tr style="display: none;">
                 <td class="form_right">
                     Senha e-mail:
                 </td>
                 <td>
                     <input class="input" type="password" style="width:385px;" name="senhaEmailEmpresa" value="<?php echo $senhaEmailEmpresa['valorparametro']; ?>" />
                 </td>
-            </tr>       
+            </tr>   
+            <tr>
+                <td class="form_right">
+                    Imagem Logomarca:
+                </td>
+                <td>
+                    <input class="input" type="file" name="imagem1" /> 
+                    <input type="hidden" name="acao" value="imagem">
+                    <br>
+                    <span style="font-size: 10px; color:black;"><i>Tamanho sugerido: 265px largura X 58px Altura</i></span>
+                </td>
+            </tr>   
         </table>
     </div>
     
-    <span style="font-family:Arial, Helvetica, sans-serif; font-size:10px;float:left;">Layout</span>
-    <div style=" font-family:Arial, Helvetica, sans-serif; width:98%; height:172px; padding-left:10px; padding-top:10px; float:left; border:3px solid 
-                    #FFF; margin:0px 0px 0px 0px;">
-        <b>Logomarca:</b><br> 
-        <table>
-            <tr>
-                <td class="form_right">
-                    Largura:
-                </td>
-                <td>
-                    <input class="input" type="text" style="width:40px;" name="larguraImgLogo" value="<?php echo $img_logo_altura['valorparametro']; ?>"/> px (Somente números)
-                </td>
-            </tr>
-            <tr>
-                <td class="form_right">
-                    Altura:
-                </td>
-                <td>
-                    <input class="input" type="text" style="width:40px;" name="alturaImgLogo" value="<?php echo $img_logo_largura['valorparametro']; ?>" /> px (Somente números)
-                </td>
-            </tr>
-            <tr>
-                <td class="form_right">
-                    Imagem Logo:
-                </td>
-                <td>
-                    <input class="input" type="file" name="imagem1" /> px (Somente números)
-                    <input type="hidden" name="acao" value="imagem">
-                </td>
-            </tr>
-            <!-- <tr>
-                <td class="form_right">
-                    Cor de fundo:
-                </td>
-                <td>
-                    <input class="input" type="text" style="width:88px;" name="corDeFundo" value="<?php echo $corDeFundo['valorparametro']; ?>"  /> (Hexadecimal)
-                </td>
-            </tr> -->
-        </table>       
-    </div>
-    
+        
      <span style="font-family:Arial, Helvetica, sans-serif; font-size:10px; float:left;">Redes Sociais</span>
       <div style=" font-family:Arial, Helvetica, sans-serif; width:98%; height:100px; padding-left:10px; padding-top:10px; float:left; border:3px solid
       #FFF; margin:0px 0px 0px 0px;">
